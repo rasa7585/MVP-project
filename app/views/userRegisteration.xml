@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="userRegWin">
+		<CardView class="container">
+			<Label id="title"></Label>
+			<Widget src="input-materialdesign" id="name"/>
+			<Widget src="input-materialdesign" id="email"/>
+			<Widget src="input-materialdesign" id="password"/>
+			<View id="photoView" onClick="openGallery">
+				<Label id="photoIcon"></Label>
+			</View>
+			<View id="loginBtn">
+				<Label id="loginBtnLabel">Create User</Label>
+			</View>
+		</CardView>
+	</Window>
+</Alloy>

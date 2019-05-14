@@ -2,4 +2,8 @@ function doClick(e) {
 	alert($.label.text);
 }
 
-$.index.open();
+function openUserRegisterationPage(){
+	Alloy.createController("userRegisteration").getView().open();
+}
+
+$.loginWin.open();

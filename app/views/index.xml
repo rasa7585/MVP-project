@@ -1,5 +1,14 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window id="loginWin">
+		<CardView class="container">
+			<Label id="title"></Label>
+			<Widget src="input-materialdesign" id="textfieldTest"/>
+			<!-- <Widget src="input-materialdesign" id="email"/> -->
+			<Widget src="input-materialdesign" id="password"/>
+			<View id="loginBtn">
+				<Label id="loginBtnLabel">Login</Label>
+			</View>
+			<Label id="signup" onClick="openUserRegisterationPage">Sign Up</Label>
+		</CardView>
 	</Window>
 </Alloy>
