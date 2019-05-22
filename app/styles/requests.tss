@@ -21,22 +21,22 @@
 "#friendName":{
 	text: "Reza Mohammadi",
 	font:{
-		fontSize: 14,
+		fontSize: 13,
 		fontWeight: "bold"
 	},
 	color: "#6e6e6e",
-	left: 75
+	left: 60
 }
 
-"#status":{
-	width: 75,
+"#accept":{
+	width: 70,
 	height: 30,
 	backgroundColor: "#419fd9",
 	right: 0
 }
 
-"#statusLabel":{
-	text: "Unfriend",
+"#acceptLabel":{
+	text: "Accept",
 	color: "#fff",
 	width:Titanium.UI.FILL,
 	textAlign: "center",
@@ -44,6 +44,24 @@
 		fontSize:12
 	}
 }
+
+"#deleteBtn":{
+	width: 70,
+	height: 30,
+	backgroundColor: "#dd5044",
+	right: 83
+}
+
+"#deleteLabel":{
+	text: "Delete",
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "center",
+	font:{
+		fontSize:12
+	}
+}
+
 
 "#top":{
 	width:"86%",

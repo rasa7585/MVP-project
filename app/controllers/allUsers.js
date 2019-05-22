@@ -1,6 +1,6 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
-
+$.allUsersWin.setTitle("MVP Users");
 var items = [];
 
 function loadUsers() {

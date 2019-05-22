@@ -2,22 +2,51 @@
 	backgroundColor: 'white',
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	layout: 'vertical'
+	top: 0,
+	layout:"vertical"
+}
+
+"#userContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
 }
 
 "#photoContainer": {
 	backgroundColor: 'white',
-	height: '160dp',
-	width: Ti.UI.FILL
+	// width: Ti.UI.FILL,
+	left: 30,
+	top: 20,
+	// borderColor:'blue',
+	// borderWidth:1,
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+}
+
+"#userInfo":{
+	width:200,
+	height:Titanium.UI.SIZE,
+	layout: "vertical",
+	right: 30,
+	top: 20,
+	// borderColor: 'red',
+	// borderWidth: 1,
+	backgroundColor:"transparent"
+}
+
+"#line":{
+	width:"90%",
+	height:1,
+	backgroundColor:"#95419fd9",
+	top:15
 }
 
 "#profilePhoto": {
 	backgroundColor: 'transparent',
-	height: '140dp',
-	width: '140dp',
+	height: '65dp',
+	width: '65dp',
 	borderRadius: 70,
 	borderColor: '#419fd9',
-	borderWidth: '5dp'
+	borderWidth: '2dp'
 }
 
 "#defauleProfImg": {
@@ -36,21 +65,25 @@
 "#nameContainer": {
 	backgroundColor: 'white',
 	height: Ti.UI.SIZE,
-	width: Ti.UI.FILL
+	// width: Ti.UI.FILL,
+	top: 0
 }
 
 "#name": {
 	color: '#3a3a3a',
 	font: {
-		fontSize: '30dp'
+		fontSize: '17dp'
 	},
-	top: '0dp'
+	top: '0dp',
+	width:Ti.UI.FILL,
+	textAlign: "left"
 }
 
 "#emailContainer": {
 	backgroundColor: 'white',
 	height: '40dp',
-	width: Ti.UI.FILL,
+	// width: Ti.UI.FILL,
+	bottom: 0
 }
 
 "#innerEmailContainer": {
@@ -62,7 +95,7 @@
 "#emailIcon": {
 	font: {
 		fontFamily: 'material_icons.ttf',
-		fontSize: '20dp'
+		fontSize: '15dp'
 	},
 	color: '#419fd9'
 }
@@ -71,63 +104,9 @@
 	color: '#419fd9',
 	left: '5dp',
 	font: {
-		fontSize: '17dp'
-	}
-}
-
-"#line": {
-	backgroundColor: '#419fd9',
-	height: '2dp',
-	width: '90%'
-}
-
-"#interestsContainer": {
-	backgroundColor: 'white',
-	height: '300dp',
-	width: Ti.UI.FILL,
-	layout: 'vertical'
-}
-
-"#title": {
-	color: '#666564',
-	font: {
-		fontSize: '20dp'
-	},
-	left: '20dp',
-	top: '10dp' 
-}
-
-"#listViewContainer": {
-	height: Ti.UI.SIZE,
-	width: '40%',
-	layout: 'horizontal',
-	left: '20dp',
-	backgroundColor: '#efefef',
-	top: '10dp'
-}
-
-"#container": {
-	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE,
-	layout: 'horizontal',
-	top: '10dp',
-	// backgroundColor: 'yellow',
-	left: '10dp'
-}
-
-"#option": {
-	height: '20dp',
-	width: '20dp',
-	borderRadius: 3,
-	backgroundColor: 'white',
-	borderColor: '#419fd9',
-	borderWidth: '2dp'
-}
-
-"#optionLbl": {
-	color: '#666564',
-	font: {
 		fontSize: '15dp'
 	},
-	left: '7dp'
+	
+	width:Ti.UI.FILL,
+	textAlign: "left"
 }

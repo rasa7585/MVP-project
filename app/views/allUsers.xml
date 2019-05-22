@@ -1,7 +1,6 @@
 <Alloy>
-	<Window>
+	<Window id="allUsersWin">
 		<View id="holeContainer">
-			<Label id="topLBL">List of All Users:</Label>
 			<CardView id="listViewContainer">
 				<ListView defaultItemTemplate="template" id="myListView">
 					<Templates>

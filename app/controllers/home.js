@@ -1,29 +1,29 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
-
-var items = [];
-
-function loadInterests() {
-	var data = Alloy.Globals.db.execute('SELECT * FROM interests');
-
-	while (data.isValidRow()) {
-
-		items.push({
-			properties : {
-				itemId : data.fieldByName('id')
-			},
-			optionLbl : {
-				text : data.fieldByName('name')
-			}
-		});
-
-		data.next();
-	}
-
-	$.section.items = items;
-}
-
-loadInterests();
+// 
+// var items = [];
+// 
+// function loadInterests() {
+	// var data = Alloy.Globals.db.execute('SELECT * FROM interests');
+// 
+	// while (data.isValidRow()) {
+// 
+		// items.push({
+			// properties : {
+				// itemId : data.fieldByName('id')
+			// },
+			// optionLbl : {
+				// text : data.fieldByName('name')
+			// }
+		// });
+// 
+		// data.next();
+	// }
+// 
+	// $.section.items = items;
+// }
+// 
+// loadInterests();
 
 function setInfo() {
 	var userData;
@@ -43,12 +43,23 @@ function setInfo() {
 			title:"Friends"
 		});
 		
+		var friendRequests = menu.add({
+			title: "Requests"
+		});
+		
 		var logout = menu.add({
 			title: "Logout"
 		});
 		
+		
+		
 		friends.addEventListener("click", function(e){
 			Alloy.createController("listOfFriends").getView().open();
+		});
+		
+		
+		friendRequests.addEventListener("click", function(e){
+			Alloy.createController("requests").getView().open();
 		});
 		
 		logout.addEventListener("click", function(e){
@@ -62,4 +73,8 @@ function setInfo() {
 $.homeWin.addEventListener("android:back", function(e){
 	
 });
+
+function showProfile(){
+	Alloy.createController("userProfile").getView().open();
+}
 

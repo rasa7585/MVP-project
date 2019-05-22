@@ -1,38 +1,26 @@
 <Alloy>
 	<Window onOpen="setInfo" id="homeWin">
 		<ScrollView id="holeContainer">
-			<View id="photoContainer">
-				<View id="profilePhoto">
-					<Label id="defauleProfImg" text="person"></Label>
-					<ImageView id="profileImg"></ImageView>
+			<View id="userContainer">
+				<View id="photoContainer" onClick="showProfile">
+					<View id="profilePhoto">
+						<Label id="defauleProfImg" text="person"></Label>
+						<ImageView id="profileImg" />
+					</View>
 				</View>
-			</View>
-			<View id="nameContainer">
-				<Label id="name"></Label>
-			</View>
-			<View id="emailContainer">
-				<View id="innerEmailContainer">
-					<Label id="emailIcon" text="mail"></Label>
-					<Label id="email"></Label>
+				<View id="userInfo" onClick="showProfile">
+					<View id="nameContainer">
+						<Label id="name"></Label>
+					</View>
+					<View id="emailContainer">
+						<View id="innerEmailContainer">
+							<!-- <Label id="emailIcon" text="mail"></Label> -->
+							<Label id="email"></Label>
+						</View>
+					</View>
 				</View>
 			</View>
 			<View id="line"></View>
-			<View id="interestsContainer">
-				<Label id="title">Choose Your Interests:</Label>
-				<CardView id="listViewContainer">
-					<ListView id='interestsList' defaultItemTemplate="template">
-						<Templates>
-							<ItemTemplate name="template">
-								<View id="container">
-									<View id="option"></View>
-									<Label bindId="optionLbl" id="optionLbl"></Label>
-								</View>
-							</ItemTemplate>
-						</Templates>
-						<ListSection id="section"></ListSection>
-					</ListView>
-				</CardView>
-			</View>
 		</ScrollView>
 	</Window>
 </Alloy>

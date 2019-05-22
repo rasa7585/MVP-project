@@ -50,6 +50,10 @@ function login(){
 	
 }
 
+$.loginWin.addEventListener("android:back", function(e){
+	
+});
+
 // $.loginWin.open();
 if (Ti.App.Properties.getString("email") == null) {
 	$.loginWin.open();

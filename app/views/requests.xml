@@ -1,26 +1,21 @@
 <Alloy>
-	<Window class="container" id="friendWin">
+	<Window class="container" id="requestWin">
 		<ListView defaultItemTemplate="template" id="listView">
 			<Templates>
 				<ItemTemplate name="template">
 					<View id='outer'>
 						<ImageView id="friendImg"/>
 						<Label id="friendName"></Label>
-						<View id="status">
-							<Label id="statusLabel"></Label>
+						<View id="accept">
+							<Label id="acceptLabel"></Label>
+						</View>
+						<View id="deleteBtn">
+							<Label id="deleteLabel"></Label>
 						</View>
 					</View>
 				</ItemTemplate>
 			</Templates>
 			<ListSection id="section">
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
 				<ListItem />
 				<ListItem />
 				<ListItem />
