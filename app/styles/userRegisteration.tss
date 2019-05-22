@@ -28,18 +28,23 @@
 "#email": {
 	titleHint: "Email",
 	maskType: "email",
-	animationType: 'leftToRight'
+	animationType: 'leftToRight',
+	required: "Required field"
 }
 
 "#password":{
 	titleHint: "Password",
 	password: true,
-	animationType: 'leftToRight'
+	animationType: 'leftToRight',
+	minLength: 8,
+	required: "Required field"
+
 }
 
 "#name":{
 	titleHint:"Name",
-	animationType: 'leftToRight'
+	animationType: 'leftToRight',
+	required: "Required field"
 }
 
 "#loginBtn":{

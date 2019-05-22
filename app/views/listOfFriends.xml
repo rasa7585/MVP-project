@@ -1,0 +1,39 @@
+<Alloy>
+	<Window class="container">
+		<View id="top">
+			<Label id="title"></Label>
+			<View id="usersBtn" onClick="showListOfUsers">
+				<Label id="usersBtnLabel">Users</Label>
+			</View>
+		</View>
+		<ListView defaultItemTemplate="template" id="listView">
+			<Templates>
+				<ItemTemplate name="template">
+					<View id='outer'>
+						<ImageView id="friendImg"/>
+						<Label id="friendName"></Label>
+						<View id="status">
+							<Label id="statusLabel"></Label>
+						</View>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section">
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+				<ListItem />
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

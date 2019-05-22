@@ -5,7 +5,7 @@
 			<Widget src="input-materialdesign" id="textfieldTest"/>
 			<!-- <Widget src="input-materialdesign" id="email"/> -->
 			<Widget src="input-materialdesign" id="password"/>
-			<View id="loginBtn">
+			<View id="loginBtn" onClick="login">
 				<Label id="loginBtnLabel">Login</Label>
 			</View>
 			<Label id="signup" onClick="openUserRegisterationPage">Sign Up</Label>

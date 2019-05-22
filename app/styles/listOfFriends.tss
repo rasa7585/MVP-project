@@ -1,0 +1,93 @@
+
+".container": {
+	backgroundColor: "#fff",
+	layout:"vertical"
+}
+
+"#outer":{
+	// layout:"horizontal",
+	width: "100%",
+	height: 60
+}
+
+"#friendImg":{
+	image: "/images/userImg/user1.jpg",
+	width: 45,
+	height: 45,
+	borderRadius: 50,
+	left: 0
+}
+
+"#friendName":{
+	text: "Reza Mohammadi",
+	font:{
+		fontSize: 14,
+		fontWeight: "bold"
+	},
+	color: "#6e6e6e",
+	left: 75
+}
+
+"#status":{
+	width: 75,
+	height: 30,
+	backgroundColor: "#419fd9",
+	right: 0
+}
+
+"#statusLabel":{
+	text: "Unfriend",
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "center",
+	font:{
+		fontSize:12
+	}
+}
+
+"#top":{
+	width:"86%",
+	height:50,
+	// layout:"horizontal"
+}
+
+"#title":{
+	text:"All Friends",
+	font:{
+		fontSize:20,
+		// fontWeight:"bold"
+	},
+	color:"#419fd9",
+	width:"100%",
+	textAlign:"left",
+	left:0
+}
+
+"#usersBtn":{
+	width: 75,
+	height: 35,
+	backgroundColor: "#419fd9",
+	right: 0,
+	top:5
+}
+
+"#usersBtnLabel":{
+	text: "Users",
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "center"
+}
+
+"#listView":{
+	width:"86%",
+	height:Titanium.UI.SIZE,
+	top:30,
+	separatorColor:"#e8f2fe",
+	
+}
+
+"#section":{
+	
+}
+
+

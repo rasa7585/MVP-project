@@ -1,0 +1,94 @@
+"#holeContainer": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: 'white',
+	layout: 'vertical'
+}
+
+"#topLBL": {
+	color: '#208FE5',
+	font: {
+		fontSize: '25dp'
+	},
+	left: '20dp',
+	top: '10dp',
+	height: '5%'
+}
+
+"#listViewContainer": {
+	backgroundColor: '#efefef',
+	height: '95%',
+	width: Ti.UI.FILL,
+	top: '20dp'
+}
+
+"#container": {
+	height: Ti.UI.SIZE,
+	width: '95%',
+	backgroundColor: 'white',
+	layout: 'horizontal',
+	top: '10dp',
+	borderRadius: 5
+}
+
+"#photoContainer": {
+	height: Ti.UI.SIZE,
+	width: '30%'
+}
+
+"#photo": {
+	height: '80dp',
+	width: '80dp',
+	borderRadius: 40,
+	backgroundColor: 'white',
+	top: '10dp',
+	borderColor: "#dbdbdb"
+}
+
+"#profilePhoto": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+
+"#defaultIMG": {
+	font: {
+		fontFamily: 'material_icons.ttf',
+		fontSize: '55dp'
+	},
+	color: '#dbdbdb'
+}
+
+"#nameContainer": {
+	height: Ti.UI.SIZE,
+	width: '40%'
+}
+
+"#name": {
+	font:{
+		fontSize: '17dp'
+	},
+	color: '#4b4d4f',
+	left: '0dp',
+	top: '30dp'
+}
+
+"#btnContainer": {
+	height: '100dp',
+	width: '30%',
+	// backgroundColor: 'orange'
+}
+
+"#addFriendBtn": {
+	height: '30dp',
+	width: '90%',
+	backgroundColor: "#419fd9",
+	top: '50dp',
+	left: '0dp'
+}
+
+"#addFriendLBL": {
+	color: 'white',
+	font: {
+		fontSize: '15dp'
+	}
+}

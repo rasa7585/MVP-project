@@ -28,13 +28,13 @@
 "#textfieldTest": {
 	titleHint: "Email",
 	maskType: "email",
-	animationType: 'leftToRight'
+	animationType: 'leftToRight',
 }
 
 "#password":{
 	titleHint: "Password",
 	password: true,
-	animationType: 'leftToRight'
+	animationType: 'leftToRight',
 }
 
 "#loginBtn":{

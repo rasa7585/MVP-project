@@ -1,5 +1,5 @@
 <Alloy>
-	<Window class="userRegWin">
+	<Window class="userRegWin" id="userWind">
 		<CardView class="container">
 			<Label id="title"></Label>
 			<Widget src="input-materialdesign" id="name"/>
@@ -8,7 +8,7 @@
 			<View id="photoView" onClick="openGallery">
 				<Label id="photoIcon"></Label>
 			</View>
-			<View id="loginBtn">
+			<View id="loginBtn" onClick="createUser">
 				<Label id="loginBtnLabel">Create User</Label>
 			</View>
 		</CardView>

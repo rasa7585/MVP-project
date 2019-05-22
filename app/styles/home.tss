@@ -1,0 +1,133 @@
+"#holeContainer": {
+	backgroundColor: 'white',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+}
+
+"#photoContainer": {
+	backgroundColor: 'white',
+	height: '160dp',
+	width: Ti.UI.FILL
+}
+
+"#profilePhoto": {
+	backgroundColor: 'transparent',
+	height: '140dp',
+	width: '140dp',
+	borderRadius: 70,
+	borderColor: '#419fd9',
+	borderWidth: '5dp'
+}
+
+"#defauleProfImg": {
+	font: {
+		fontFamily: 'material_icons.ttf',
+		fontSize: '120dp'
+	},
+	color: '#dbdbdb'
+}
+
+"#profileImg": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+
+"#nameContainer": {
+	backgroundColor: 'white',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
+}
+
+"#name": {
+	color: '#3a3a3a',
+	font: {
+		fontSize: '30dp'
+	},
+	top: '0dp'
+}
+
+"#emailContainer": {
+	backgroundColor: 'white',
+	height: '40dp',
+	width: Ti.UI.FILL,
+}
+
+"#innerEmailContainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	layout: 'horizontal'
+}
+
+"#emailIcon": {
+	font: {
+		fontFamily: 'material_icons.ttf',
+		fontSize: '20dp'
+	},
+	color: '#419fd9'
+}
+
+"#email": {
+	color: '#419fd9',
+	left: '5dp',
+	font: {
+		fontSize: '17dp'
+	}
+}
+
+"#line": {
+	backgroundColor: '#419fd9',
+	height: '2dp',
+	width: '90%'
+}
+
+"#interestsContainer": {
+	backgroundColor: 'white',
+	height: '300dp',
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+}
+
+"#title": {
+	color: '#666564',
+	font: {
+		fontSize: '20dp'
+	},
+	left: '20dp',
+	top: '10dp' 
+}
+
+"#listViewContainer": {
+	height: Ti.UI.SIZE,
+	width: '40%',
+	layout: 'horizontal',
+	left: '20dp',
+	backgroundColor: '#efefef',
+	top: '10dp'
+}
+
+"#container": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	layout: 'horizontal',
+	top: '10dp',
+	// backgroundColor: 'yellow',
+	left: '10dp'
+}
+
+"#option": {
+	height: '20dp',
+	width: '20dp',
+	borderRadius: 3,
+	backgroundColor: 'white',
+	borderColor: '#419fd9',
+	borderWidth: '2dp'
+}
+
+"#optionLbl": {
+	color: '#666564',
+	font: {
+		fontSize: '15dp'
+	},
+	left: '7dp'
+}
