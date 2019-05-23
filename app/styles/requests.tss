@@ -62,13 +62,6 @@
 	}
 }
 
-
-"#top":{
-	width:"90%",
-	height:50,
-	// layout:"horizontal"
-}
-
 "#title":{
 	text:"All Friends",
 	font:{
@@ -79,21 +72,6 @@
 	width:"100%",
 	textAlign:"left",
 	left:0
-}
-
-"#usersBtn":{
-	width: 75,
-	height: 35,
-	backgroundColor: "#419fd9",
-	right: 0,
-	top:5
-}
-
-"#usersBtnLabel":{
-	text: "Users",
-	color: "#fff",
-	width:Titanium.UI.FILL,
-	textAlign: "center"
 }
 
 "#listView":{

@@ -1,31 +1,29 @@
 <Alloy>
-	<Window id="allUsersWin">
+	<Window id="allUsersWin" title="MVP Users">
 		<View id="holeContainer">
-			<CardView id="listViewContainer">
-				<ListView defaultItemTemplate="template" id="myListView">
-					<Templates>
-						<ItemTemplate name="template">
-							<View id='container'>
-								<View id="photoContainer">
-									<View id="photo">
-										<Label id="defaultIMG" text="person" />
-										<ImageView bindId="profileIMG" id="profilePhoto"></ImageView>
-									</View>
-								</View>
-								<View id="nameContainer">
-									<Label bindId="usersName" id='name' />
-								</View>
-								<View id="btnContainer">
-									<View id="addFriendBtn" onClick="addfriendBtnClick">
-										<Label id="addFriendLBL"> Add Friend </Label>
-									</View>
+			<ListView defaultItemTemplate="template" id="myListView">
+				<Templates>
+					<ItemTemplate name="template">
+						<View id='container'>
+							<View id="photoContainer">
+								<View id="photo">
+									<Label id="defaultIMG" text="person" />
+									<ImageView bindId="profileIMG" id="profilePhoto"></ImageView>
 								</View>
 							</View>
-						</ItemTemplate>
-					</Templates>
-					<ListSection id="section"></ListSection>
-				</ListView>
-			</CardView>
+							<View id="nameContainer">
+								<Label bindId="usersName" id='name' />
+							</View>
+							<View id="btnContainer">
+								<View id="addFriendBtn" onClick="addfriendBtnClick">
+									<Label id="addFriendLBL">Add Friend</Label>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="section"></ListSection>
+			</ListView>
 		</View>
 	</Window>
 </Alloy>

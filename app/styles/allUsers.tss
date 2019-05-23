@@ -1,25 +1,7 @@
 "#holeContainer": {
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	backgroundColor: 'white',
-	layout: 'vertical'
-}
-
-"#topLBL": {
-	color: '#208FE5',
-	font: {
-		fontSize: '25dp'
-	},
-	left: '20dp',
-	top: '10dp',
-	height: '5%'
-}
-
-"#listViewContainer": {
 	backgroundColor: '#efefef',
-	height: '95%',
-	width: Ti.UI.FILL,
-	top: '20dp'
 }
 
 "#container": {
