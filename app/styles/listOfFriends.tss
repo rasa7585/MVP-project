@@ -45,43 +45,10 @@
 	}
 }
 
-"#top":{
-	width:"86%",
-	height:50,
-	// layout:"horizontal"
-}
-
-"#title":{
-	text:"All Friends",
-	font:{
-		fontSize:20,
-		// fontWeight:"bold"
-	},
-	color:"#419fd9",
-	width:"100%",
-	textAlign:"left",
-	left:0
-}
-
-"#usersBtn":{
-	width: 75,
-	height: 35,
-	backgroundColor: "#419fd9",
-	right: 0,
-	top:5
-}
-
-"#usersBtnLabel":{
-	text: "Users",
-	color: "#fff",
-	width:Titanium.UI.FILL,
-	textAlign: "center"
-}
-
 "#listView":{
 	width:"86%",
 	height:Titanium.UI.SIZE,
-	top:15,
+	top:30,
 	separatorColor:"#e8f2fe",
 	
 }

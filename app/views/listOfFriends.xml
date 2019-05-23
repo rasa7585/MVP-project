@@ -1,33 +1,18 @@
 <Alloy>
-	<Window class="container" id="friendWin">
+	<Window class="container" onOpen="loadFriends" id="friendWin">
 		<ListView defaultItemTemplate="template" id="listView">
 			<Templates>
 				<ItemTemplate name="template">
 					<View id='outer'>
-						<ImageView id="friendImg"/>
-						<Label id="friendName"></Label>
-						<View id="status">
-							<Label id="statusLabel"></Label>
+						<ImageView id="friendImg" bindId="friendImg" />
+						<Label id="friendName" bindId="friendName"></Label>
+						<View id="status" onClick="unfriendBtn">
+							<Label id="statusLabel" bindId="statusLabel"></Label>
 						</View>
 					</View>
 				</ItemTemplate>
 			</Templates>
-			<ListSection id="section">
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-				<ListItem />
-			</ListSection>
+			<ListSection id="section"></ListSection>
 		</ListView>
 	</Window>
 </Alloy>

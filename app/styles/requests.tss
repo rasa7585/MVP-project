@@ -29,7 +29,7 @@
 }
 
 "#accept":{
-	width: 70,
+	width: 60,
 	height: 30,
 	backgroundColor: "#419fd9",
 	right: 0
@@ -46,10 +46,10 @@
 }
 
 "#deleteBtn":{
-	width: 70,
+	width: 60,
 	height: 30,
 	backgroundColor: "#dd5044",
-	right: 83
+	right: 70
 }
 
 "#deleteLabel":{
@@ -64,7 +64,7 @@
 
 
 "#top":{
-	width:"86%",
+	width:"90%",
 	height:50,
 	// layout:"horizontal"
 }
