@@ -3,12 +3,13 @@
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
 	top: 0,
-	layout:"vertical"
+	layout: "vertical"
 }
 
 "#userContainer":{
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE,
+	layout: 'horizontal'
 }
 
 "#photoContainer": {
@@ -23,27 +24,25 @@
 }
 
 "#userInfo":{
-	width:200,
+	width: 200,
 	height:Titanium.UI.SIZE,
 	layout: "vertical",
-	right: 30,
-	top: 20,
-	// borderColor: 'red',
-	// borderWidth: 1,
-	backgroundColor:"transparent"
+	left: 10,
+	bottom: 10,
+	backgroundColor: "transparent"
 }
 
 "#line":{
-	width:"90%",
-	height:1,
-	backgroundColor:"#95419fd9",
-	top:15
+	width: "90%",
+	height: 1,
+	backgroundColor: "#95419fd9",
+	top: 15
 }
 
 "#profilePhoto": {
 	backgroundColor: 'transparent',
-	height: '65dp',
-	width: '65dp',
+	height: '80dp',
+	width: '80dp',
 	borderRadius: 70,
 	borderColor: '#419fd9',
 	borderWidth: '2dp'
@@ -52,7 +51,7 @@
 "#defauleProfImg": {
 	font: {
 		fontFamily: 'material_icons.ttf',
-		fontSize: '120dp'
+		fontSize: '70dp'
 	},
 	color: '#dbdbdb'
 }
@@ -65,7 +64,7 @@
 "#nameContainer": {
 	backgroundColor: 'white',
 	height: Ti.UI.SIZE,
-	// width: Ti.UI.FILL,
+	width: Ti.UI.FILL,
 	top: 0
 }
 
@@ -81,23 +80,8 @@
 
 "#emailContainer": {
 	backgroundColor: 'white',
-	height: '40dp',
-	// width: Ti.UI.FILL,
-	bottom: 0
-}
-
-"#innerEmailContainer": {
 	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE,
-	layout: 'horizontal'
-}
-
-"#emailIcon": {
-	font: {
-		fontFamily: 'material_icons.ttf',
-		fontSize: '15dp'
-	},
-	color: '#419fd9'
+	width: Ti.UI.SIZE
 }
 
 "#email": {
@@ -106,7 +90,7 @@
 	font: {
 		fontSize: '15dp'
 	},
-	
+
 	width:Ti.UI.FILL,
 	textAlign: "left"
 }

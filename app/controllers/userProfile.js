@@ -14,7 +14,7 @@ function loadInterests() {
 		var id = data.fieldByName('id');
 		var count = 0;
 
-		var userInterData = Alloy.Globals.db.execute('SELECT * FROM user_interests WHERE interest_id=? and user_id=?', id, Alloy.Globals.currentUserId);
+		var userInterData = Alloy.Globals.db.execute('SELECT * FROM user_interests WHERE interest_id=? and user_id=?', id, Ti.App.Properties.getInt("userId"));
 		while (userInterData.isValidRow()) {
 
 			count++;

@@ -13,10 +13,7 @@
 						<Label id="name"></Label>
 					</View>
 					<View id="emailContainer">
-						<View id="innerEmailContainer">
-							<!-- <Label id="emailIcon" text="mail"></Label> -->
-							<Label id="email"></Label>
-						</View>
+						<Label id="email"></Label>
 					</View>
 				</View>
 			</View>

@@ -2,6 +2,16 @@
 var args = $.args;
 $.requestWin.setTitle("MVP Requests");
 
+var label = Ti.UI.createLabel({
+	text:"You do nat have any request",
+	color:"#aaa",
+	font:{
+		fontSize:20
+	},
+	width:Ti.UI.FILL,
+	textAlign:"center"
+});
+
 var items = [];
 
 function loadRequests() {
@@ -39,9 +49,17 @@ function loadRequests() {
 		});
 
 	}
+	
+	if(items.length == 0){
+		$.requestWin.remove($.listView);
+		$.requestWin.layout = "";
+		$.requestWin.add(label);
+	}else{
+		$.section.items = items;
+	}
 
-	$.section.items = items;
-
+	
+alert("load user");
 }
 
 function acceptingRequest(e){
@@ -52,6 +70,14 @@ function acceptingRequest(e){
 	alert('You are now friends');
 
 	e.section.deleteItemsAt(e.itemIndex, 1);
+	if(e.section.items.length == 0){
+		$.requestWin.remove($.listView);
+		$.requestWin.layout = "";
+		$.requestWin.add(label);
+	}
+	// loadRequests();
+	// alert();
+	
 }
 
 function deletingRequest(e){
@@ -60,6 +86,13 @@ function deletingRequest(e){
 
 	Alloy.Globals.db.execute('DELETE FROM friends WHERE action_user_id=? and (user_one_id=? or user_two_id=?) and status=0', id, Ti.App.Properties.getInt("userId"), Ti.App.Properties.getInt("userId"));
 	alert('Request is deleted');
-
+	// loadRequests();
 	e.section.deleteItemsAt(e.itemIndex, 1);
+	if(e.section.items.length == 0){
+		$.requestWin.remove($.listView);
+		$.requestWin.layout = "";
+		$.requestWin.add(label);
+	}
+	// alert(e.section.items.length);
+	// loadRequests();
 }

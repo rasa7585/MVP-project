@@ -83,7 +83,7 @@
 
 "#interestsContainer": {
 	backgroundColor: 'white',
-	height: '300dp',
+	height: '320dp',
 	width: Ti.UI.FILL,
 	layout: 'vertical'
 }
@@ -102,7 +102,7 @@
 	width: '40%',
 	layout: 'vertical',
 	left: '20dp',
-	backgroundColor: '#efefef',
+	backgroundColor: 'transparent',
 	top: '10dp'
 }
 

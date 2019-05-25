@@ -19,7 +19,7 @@
 			<View id="line"></View>
 			<View id="interestsContainer">
 				<Label id="title">Choose Your Interests:</Label>
-				<CardView id="listViewContainer">
+				<View id="listViewContainer">
 					<ListView id='interestsList' defaultItemTemplate="template" onItemclick="itemClicked">
 						<Templates>
 							<ItemTemplate name="template">
@@ -31,7 +31,7 @@
 						</Templates>
 						<ListSection id="section"></ListSection>
 					</ListView>
-				</CardView>
+				</View>
 			</View>
 		</ScrollView>
 	</Window>

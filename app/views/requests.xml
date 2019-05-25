@@ -4,7 +4,10 @@
 			<Templates>
 				<ItemTemplate name="template">
 					<View id='outer'>
-						<ImageView id="friendImg" bindId="friendImg"/>
+						<View id="imageContainer">
+							<Label id="defaultIMG" text="person" />
+							<ImageView id="friendImg" bindId="friendImg"/>
+						</View>
 						<Label id="friendName" bindId="friendName"></Label>
 						<View id="accept" onClick="acceptingRequest">
 							<Label id="acceptLabel"></Label>

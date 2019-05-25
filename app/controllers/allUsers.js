@@ -1,6 +1,15 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 $.allUsersWin.setTitle("MVP Users");
+var label = Ti.UI.createLabel({
+	text:"There is not any user",
+	color:"#aaa",
+	font:{
+		fontSize:20
+	},
+	width:Ti.UI.FILL,
+	textAlign:"center"
+});
 var items = [];
 var currentUserId = Ti.App.Properties.getInt("userId");
 
@@ -25,8 +34,15 @@ function loadUsers() {
 
 		data.next();
 	}
-
-	$.section.items = items;
+	
+	if(items.length == 0){
+		$.allUsersWin.remove($.holeContainer);
+		$.allUsersWin.layout = "";
+		$.allUsersWin.backgroundColor = "#fff";
+		$.allUsersWin.add(label);
+	}else{
+		$.section.items = items;	
+	}
 
 }
 

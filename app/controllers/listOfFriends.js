@@ -1,6 +1,15 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 $.friendWin.setTitle("MVP Friends");
+var label = Ti.UI.createLabel({
+	text:"You still do not have any friend",
+	color:"#aaa",
+	font:{
+		fontSize:20
+	},
+	width:Ti.UI.FILL,
+	textAlign:"center"
+});
 
 var items = [];
 
@@ -43,8 +52,14 @@ function loadFriends(){
 	}
 	
 	
+	if(items.length == 0){
+		$.friendWin.remove($.listView);
+		$.friendWin.layout="";
+		$.friendWin.add(label);
+	}else{
+		$.section.items = items;
+	}
 	
-	$.section.items = items;
 	
 }
 
@@ -56,6 +71,11 @@ function unfriendBtn(e){
 	alert('Now you are not friends');
 	
 	e.section.deleteItemsAt(e.itemIndex, 1);
+		if(e.section.items.length == 0){
+		$.friendWin.remove($.listView);
+		$.friendWin.layout = "";
+		$.friendWin.add(label);
+	}
 }
 
 
