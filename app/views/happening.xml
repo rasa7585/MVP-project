@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="happeningWin" id="happeningWin">
+		<CardView class="container">
+			<Label id="title"></Label>
+			<Widget src="input-materialdesign" id="name"/>
+			<Widget src="input-materialdesign" id="location"/>
+			<Widget src="input-materialdesign" id="budget"/>
+			<View id="priContainer">
+				<View id="publicContainer">
+					<Label id="publicLabel">Public</Label>
+					<ImageView id="publicRadio" />
+				</View>
+				<View id="privateContainer">
+					<Label id="privateLabel">Public</Label>
+					<ImageView id="privateRadio" />
+				</View>
+			</View>
+			<View id="createHappening">
+				<Label id="happeningBtnLabel">Save</Label>
+			</View>
+		</CardView>
+	</Window>
+</Alloy>

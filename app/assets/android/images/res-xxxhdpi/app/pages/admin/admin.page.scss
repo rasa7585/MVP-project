@@ -1,0 +1,153 @@
+#container{
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ededed;
+}
+
+#left{
+    background-color: #fff;
+    width: 75%;
+    margin:0;
+    left:0;
+    height: 100%;
+    position: absolute;
+}
+
+#right{
+     background-color: #fff;
+     width: 25%;
+     margin: 0;
+     right: 0;
+     position: absolute;
+     height: 100%;
+}
+
+#menu[scrollx=true], #menu[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+    height: 65%;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  #menu[scrollx=true] {
+    overflow-x: auto;
+  }
+  
+  #menu[scrolly=true] {
+    overflow-y: auto;
+  }
+
+  #container[scrollx=true], #container[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  #container[scrollx=true] {
+    overflow-x: auto;
+  }
+  
+  #container[scrolly=true] {
+    overflow-y: auto;
+  }
+
+  #logo{
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 35px;
+  }
+
+  #logoContainer{
+    height: 35%;
+  }
+.loginAlert{
+    background-color: red;;
+  }
+
+#logout{
+    padding-left: 30px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menuItem{
+  height: 45px;
+  padding:0 !important;
+  position: relative;
+}
+
+.centerPart, .selectedCenterItem{
+  width: 70%;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.centerPart h6, .selectedCenterItem h6{
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+  color: #494641;
+}
+
+.leftPart, .selectedLeftItem{
+  width: 15%;
+  background-color: #ededed;
+  height: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: none;
+  position: absolute;
+  top: 11px;
+}
+
+.rightPart, .selectedRightItem{
+  top: 11px;
+  width: 15%;
+  background-color: #ededed;
+  height: 10px;
+  border-right: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: absolute;
+  right: 0px;
+}
+
+.selectedLeftItem, .selectedRightItem{
+  background-color: #c5b591;
+}
+
+.selectedCenterItem{
+  border: 1px solid #c5b591;
+}
+
+
+ 
+
+  

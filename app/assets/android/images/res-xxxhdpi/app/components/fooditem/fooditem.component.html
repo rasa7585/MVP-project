@@ -1,0 +1,24 @@
+<ion-card *ngFor="let item of foodList" id="item" (click)="showDetails(item.id)">
+  <img *ngIf="(item.offer_price)!= null" src="/assets/icon/discount.png" class="discount">
+  <ion-card-content id="itemContent" style="padding:0px;">
+    <img *ngIf="item.photo" src='http://ace.iraq-soft.info/public/images/{{item.photo}}' class="itemImg">
+    <h2  *ngIf="(item.name+'').length < 9; then noChange else changeName"></h2>
+    <ng-template #noChange>
+      <h3 class="itemName">{{item.name}}</h3>
+    </ng-template>
+    <ng-template #changeName>
+      <h3 class="itemName">{{item.name | slice:0:10}}...</h3>
+    </ng-template>
+    <div class="priceContainer" *ngIf="(item.offer_price)!=null; then noOfferPrice else offerPrice"> </div>
+    <ng-template #noOfferPrice>
+      <div class="offerpriceContainer">
+        <h3 class="offerPrice">{{item.offer_price}}</h3>
+      </div>
+    </ng-template>
+    <ng-template #offerPrice>
+      <div class="priceContainer">
+        <h3 class="price">{{item.price}}</h3>
+      </div>
+    </ng-template>
+  </ion-card-content>
+</ion-card>

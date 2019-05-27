@@ -1,0 +1,105 @@
+#container{
+    width: 100%;
+    height: 100%
+}
+
+#top{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#top h1{
+    position: absolute;
+    right: 30px;
+    color: #d2d1cd;
+    font-weight: bolder;
+}
+
+#data_table{
+    direction: rtl;
+    width: 100%;
+}
+
+#subject{
+    width: 100%;
+    background-color: white;
+    border-bottom: 5px solid #f7f7f7;
+    height: 40px;
+  }
+
+#subject span{
+    color:#cacac8;
+    height: 100%;
+    float: right;
+    text-align: right;
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#subject span.no{
+    width: 13%;
+    text-align: center !important;
+}
+
+#subject span.review, #subject span.img, #subject span.name{
+    width: 18%;
+}
+
+#subject span.details{
+    width: 33%;
+}
+
+#data_table table{
+    width: 100%;
+    background-color: #fff;
+}
+
+table tr{
+    height: 40px;
+}
+
+#data_table table td{
+    color:#737369;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+}
+
+td.no{
+    width: 13%;
+    text-align: center !important;
+}
+
+td.review, td.img, td.review{
+    width: 18% !important;
+}
+
+td.details{
+    width: 33% !important;
+}
+
+#data_table[scrollx=true], #data_table[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+    height: 80%;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  #data_table[scrollx=true] {
+    overflow-x: auto;
+  }
+  
+  #data_table[scrolly=true] {
+    overflow-y: auto;
+  }
+
+td.img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}

@@ -1,0 +1,109 @@
+".happeningWin":{
+	backgroundColor: "#fff",
+	// layout: "vertical",
+	theme: "Theme.AppCompat.Fullscreen"
+}
+
+".container": {
+	backgroundColor: "#efefef",
+	width: "80%",
+	height: 450,
+	layout: "vertical",
+	borderRadius: 5,
+	// top: 50,
+	padding: 30
+}
+
+"#title":{
+	text: "New Happening",
+	font:{
+		fontSize: 24,
+		fontWeight: "bold"
+	},
+	color: "#419fd9",
+	width: "100%",
+	textAlign: "center"
+}
+
+"#location": {
+	titleHint: "location",
+	animationType: 'leftToRight',
+	required: "Required field"
+}
+
+"#budget":{
+	titleHint: "Budget",
+	animationType: 'leftToRight',
+	required: "Required field"
+
+}
+
+"#priContainer":{
+	width:Titanium.UI.FILL,
+	height:50,
+	
+}
+
+"#publicContainer":{
+	width:"50%",
+	left:0,
+	height:Titanium.UI.FILL,
+	layout:"horizontal"
+}
+
+"#privateContainer":{
+	width:"50%",
+	right:0,
+	height:Titanium.UI.FILL,
+	layout:"horizontal"
+}
+
+"#publicLabel":{
+	text:"Public",
+	font:{
+		fontSize:14,
+	},
+	color:"#555",
+}
+
+"#privateLabel":{
+	text:"Private",
+	font:{
+		fontSize:14,
+	},
+	color:"#555",
+}
+
+"#publicRadio":{
+	image : "/images/radio_checked.png",
+	left:15
+}
+
+"#privateRadio":{
+	image : "/images/radio_unchecked.png",
+	left:15
+}
+
+"#name":{
+	titleHint:"Name",
+	animationType: 'leftToRight',
+	required: "Required field"
+}
+
+"#createHappening":{
+	width:Titanium.UI.FILL,
+	height: 40,
+	backgroundColor: "#419fd9",
+	top: 20
+}
+
+"#happeningBtnLabel":{
+	color: "#efefef",
+	font:{
+		fontWeight: "bold"
+	},
+	textAlign: "center",
+	width:Titanium.UI.FILL
+}
+
+

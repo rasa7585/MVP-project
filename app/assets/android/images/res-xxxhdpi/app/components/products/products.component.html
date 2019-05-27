@@ -1,0 +1,33 @@
+<div id="container">
+    <div id="top">
+      <div id="btn">
+        <h3>Add Product</h3>
+      </div>
+      <h1>Products</h1>
+    </div>
+   
+      <div id="subject">
+          <span class="img">Image</span>
+          <span class="name">Name</span>
+          <span class="category">Category</span>
+          <span class="sort">Sort</span>
+          <span class="price">Price</span>
+          <span class="time">Time</span>
+          <span class="desc">Description</span>
+          <span class="action">Action</span>
+      </div>
+        <div id="data_table"  scrollY="true">
+        <table>
+        <tr *ngFor="let product of productList" >
+          <td class="img"><img *ngIf="product.photo"src="http://ace.iraq-soft.info/public/images/{{product.photo}}"></td>
+          <td class="name">{{product.name}}</td>
+          <td class="category">{{product.category_id}}</td>
+          <td class="sort">{{product.sort}}</td>
+          <td class="price">{{product.price}}</td>
+          <td class="time">{{product.time}}</td>
+          <td class="desc"><span style="color:#d54896;">View</span></td>
+          <td class="action"><span style="color:#d54896;">Edit</span><span style="color:#f17c15;">Delete</span></td>
+        </tr>
+        </table>
+      </div>
+  </div>

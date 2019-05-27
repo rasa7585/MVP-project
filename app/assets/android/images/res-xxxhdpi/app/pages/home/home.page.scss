@@ -1,0 +1,597 @@
+#restaurantReviewCard{
+  width: 50%;
+  height: 30px;
+  margin-top: -5px;
+  margin: 0 auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  box-shadow: 1px 1px 19px 10px #e5e5e5;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 25%;
+}
+
+#container{
+  height: 85%;
+  background-color: #ededed;
+}
+
+#left{
+  background-color: #ededed;
+  width: 75%;
+  margin: 0;
+  height: 100%;
+  padding-left: 0.75%;
+  float: left;
+}
+
+#right{
+  background-color: #fff;
+  width: 25%;
+  margin: 0;
+  float: right;
+  height: 100%;
+}
+
+#top{
+  width: 100%;
+  height: 15%;
+  position: relative;
+}
+
+#countLabel{
+  top: -5px;
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d1cdcc;
+}
+
+#viewIcon{
+  width: 20px;
+  margin-right: 10px;
+}
+
+#count{
+  width: 20%;
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+
+#menu[scrollx=true], #menu[scrolly=true] {
+  position: relative;
+  overflow: hidden;
+  height: 70%;
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+  
+  #menu[scrollx=true] {
+    overflow-x: auto;
+  }
+  
+  #menu[scrolly=true] {
+    overflow-y: auto;
+  }
+
+  #container[scrollx=true], #container[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  #container[scrollx=true] {
+    overflow-x: auto;
+  }
+  
+  #container[scrolly=true] {
+    overflow-y: auto;
+  }
+
+  #logo{
+    width: 100%;
+  }
+
+  #logoContainer{
+    height: 30%;
+    padding: 20px;
+    padding-top: 30px;
+  }
+.loginAlert{
+    background-color: red;;
+  }
+
+  #sideSection{
+    width: 320px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    transition-timing-function: linear;
+    transition-delay: 3s;
+    top:0;
+    left: 0;
+}
+
+#close{
+  display: block;
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+} 
+
+#sideSection img{
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+#sideSection h3{
+  text-align: center;
+  margin: 0px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+#sideSection h6{
+  color: #9c9c9c;
+  padding: 10px;
+  padding-top: 0;
+  text-align: center;
+  font-size: 12px;
+  margin: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+  text-align: justify;
+  direction: rtl;
+}
+
+#time, #price{
+  width: 100%;
+  height: 15px;
+  margin: 0px;
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+#time{
+  margin-top: 5px;
+}
+
+#time #timeValue{
+  float: left;
+  margin: 0px;
+  color: #9c9c9c;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#timeLabel{
+  float: right;
+  margin: 0px;
+  font-size: 13px;
+  color: #9c9c9c;
+  font-weight: bold;
+}
+
+#priceValue{
+  float: left;
+  margin: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #646464;
+}
+
+#priceLabel{
+  float: right;
+  margin: 0px;
+  color: #646464;
+  font-weight: bold;
+  font-size: 13px;
+  z-index: 1000;
+}
+
+#line{
+  width: 68%;
+  height: 10px;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  top: 20px;
+}
+
+#makeReview{
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #c5b591;
+  margin-top: 25px;
+}
+
+
+.menuItem{
+  height: 45px;
+  padding:0 !important;
+  position: relative;
+}
+
+.centerPart, .selectedCenterItem{
+  width: 70%;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.centerPart h6, .selectedCenterItem h6{
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+  color: #494641;
+}
+
+.leftPart, .selectedLeftItem{
+  width: 15%;
+  background-color: #ededed;
+  height: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: none;
+  position: absolute;
+  top: 11px;
+}
+
+.rightPart, .selectedRightItem{
+  top: 11px;
+  width: 15%;
+  background-color: #ededed;
+  height: 10px;
+  border-right: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: absolute;
+  right: 0px;
+}
+
+.selectedLeftItem, .selectedRightItem{
+  background-color: #c5b591;
+}
+
+.selectedCenterItem{
+  border: 1px solid #c5b591;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#item{
+  background-color: #fff;
+  width: 19.5%;
+  margin: 0;
+  float: left;
+  margin-right:0.25%;
+  height: 230px;
+  border-radius: 15px;
+  margin-bottom:10px;
+  position: relative;
+}
+
+.itemImg{
+  border-radius: 18px;
+  margin: 0;
+  margin-top:10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height:58% !important; 
+  width: 90%;
+  object-fit:fill;
+}
+
+#itemContent{
+  padding: 0px !important;
+  height: 100% !important;
+}
+
+.itemName{
+  text-align: center;
+  font-weight: bold;
+  color:#6f6f65;
+  width: 100%;
+  direction: rtl;
+  margin-top: 10px;
+}
+
+.priceContainer{
+  background-color: #c5b591;
+  width: 80%;
+  height: 37px;
+  border-radius: 18px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top:9px;
+}
+
+.offerpriceContainer{
+  background-color: #df2b2a;
+  width: 80%;
+  height: 37px;
+  border-radius: 18px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top:9px;
+}
+
+.price, .offerPrice{
+  text-align: center;
+  color: #6b553d;
+  font-weight: bold;
+  
+}
+
+.offerPrice{
+  color: #fff;
+}
+
+.discount{
+  width: 25%;
+  left: 15px;
+  position: absolute;
+  z-index: 1000;
+}
+
+
+.mainContainer{
+  direction: rtl;
+  height: 205px;
+  padding: 15px;
+  position: relative;
+  background-color: #fff;
+  padding-right: 15px;
+  border-radius: 20px;
+}
+
+.foodimg{
+  width: 160px;
+  height: 170px;
+  float: right;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.datacontainer{
+  float: left;
+  padding-right: 10px;
+  position: absolute;
+  right: 175px;
+  padding-left: 10px;
+}
+
+.datacontainer h1{
+  color: #666655;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.datacontainer h6.desc{
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  height: 75px;
+  overflow: auto;
+  margin: 0px;
+  padding-top:5px;
+}
+
+.pricecontainer{
+  width: 100%;
+  height: 50px;
+}
+
+.btn{
+  text-align: center;
+  height: 37px;
+  width: 100px;
+  background-color: #c3b88a;
+  border-radius: 15px;
+  float: right;
+  margin-top: 10px;
+}
+
+.btn h6{
+  position: relative;
+  top: 8px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.reviewcontainer{
+  float: left;
+  padding-right: 10px;
+}
+
+.time{
+  color: #000;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.timeLabel{
+  color: #9c9c9c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.makeReview{
+  width: 100%;
+  height: 30px;
+  margin-top: -10px;
+}
+
+.review{
+  text-align: left;
+  float: left;
+  font-weight: bl;
+  font-weight: bold;
+  font-size: 13px;
+  color: #c3b88a;
+}
+
+#sideDesc{
+  width: 100%;
+  height: 80px;
+}
+
+#sideDesc[scrollx=true], #sideDesc[scrolly=true] {
+  position: relative;
+  overflow: hidden;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#sideDesc[scrollx=true] {
+  overflow-x: auto;
+}
+
+#sideDesc[scrolly=true] {
+  overflow-y: auto;
+}
+
+#reviewModal{
+  width: 280px;
+  height: 310px;
+  background-color: #fff;
+  margin: 0 auto; 
+  position: fixed;
+  z-index: 1000;
+  top:10%;
+  left:20%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#closeDiv{
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  float: right;
+  z-index: 1000;
+}
+
+#closeReviewIcon{
+  // padding: 15px;
+  font-size: 26px;
+}
+
+#reviewTitle{
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 10px;
+      padding: 0px;
+      margin: 0px;
+      height: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #aaa;
+      text-shadow: none;
+      padding-left: 32px;  
+}
+
+#favStar{
+  width: 216px;
+  padding: 0px;
+  margin-top: 42px;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  padding-left: 7px;
+}
+
+.favIcon{
+  color: #c5b591;
+  font-size: 37px;
+}
+
+#vote{
+  float: left;
+  margin-top: 10px;
+  // margin-left: 20px;
+  color: #c5b591;
+  font-size: 18px;
+}
+
+#question{
+  float: right;
+  color: #948259;
+  margin-top: 10px;
+  // margin-right: 20px;
+  font-weight: bold;
+}
+
+#reviewContent{
+  width: 100%;
+  height: 110px;
+  border: 1px solid #948259;
+  border-radius: 15px;
+  // margin-top: 10px;
+}
+
+#reviewBtn{
+  --background :#948259;
+  // color: #555
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -78,3 +78,7 @@ function showProfile(){
 	Alloy.createController("userProfile").getView().open();
 }
 
+function addHappening(){
+	Alloy.createController("happening").getView().open();
+}
+

@@ -1,0 +1,151 @@
+<ion-content style="height:100%;">
+  <div id="left">
+    <div id="top">
+      <div id="count">
+        <img *ngIf="view == 'list'" src="/assets/icon/grid.png" id="viewIcon" (click)="changeView()">
+        <img *ngIf="view == 'grid'" src="/assets/icon/list.png" id="viewIcon" (click)="changeView()">
+        <label id="countLabel">{{count}}: Count</label>
+      </div>
+      <ion-card id="restaurantReviewCard" (click)="showReview()"></ion-card>
+    </div>
+    <div id="container" scrollY="true">
+
+        <h2  *ngIf="view == 'grid'; then gridView else listView"></h2>
+        <ng-template #gridView>
+            <ion-card *ngFor="let item of foodList" id="item" (click)="showDetails(item.id)">
+                <img *ngIf="(item.offer_price)!= null" src="/assets/icon/discount.png" class="discount">
+                <ion-card-content id="itemContent" style="padding:0px;">
+                  <img *ngIf="item.photo" src='http://ace.iraq-soft.info/public/images/{{item.photo}}' class="itemImg">
+                  <h2  *ngIf="(item.name+'').length < 9; then noChange else changeName"></h2>
+                  <ng-template #noChange>
+                    <h3 class="itemName">{{item.name}}</h3>
+                  </ng-template>
+                  <ng-template #changeName>
+                    <h3 class="itemName">{{item.name | slice:0:10}}...</h3>
+                  </ng-template>
+                  <div class="priceContainer" *ngIf="(item.offer_price)!=null; then noOfferPrice else offerPrice"> </div>
+                  <ng-template #noOfferPrice>
+                    <div class="offerpriceContainer">
+                      <h3 class="offerPrice">{{item.offer_price}}</h3>
+                    </div>
+                  </ng-template>
+                  <ng-template #offerPrice>
+                    <div class="priceContainer">
+                      <h3 class="price">{{item.price}}</h3>
+                    </div>
+                  </ng-template>
+                </ion-card-content>
+              </ion-card>
+        </ng-template>
+        <ng-template #listView>
+            <ion-card class="mainContainer" *ngFor="let product of foodList">
+                <img *ngIf="product.photo" src='http://ace.iraq-soft.info/public/images/{{product.photo}}' class="foodimg">
+                <div class="datacontainer">
+                  <h1>{{product.name}}</h1>
+                  <h6 [innerHTML]="product.description" class="desc"></h6>
+                  <div class="pricecontainer">
+                    <div class="btn">
+                      <h6>{{product.price}}</h6>
+                    </div>
+                    <div class="reviewcontainer">
+                      <div>
+                        <h6 class="timeLabel">Preparing Time <span class="time">{{product.time}} Minutes</span></h6>
+                      </div>
+                      <div class="makeReview">
+                        <label class="review">Make a Review</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ion-card>
+        </ng-template>
+      
+      
+      
+    </div>
+  </div>
+  <div id="right">
+    <div id="logoContainer">
+      <img src="/assets/icon/logo.png" id="logo" (click)="presentAlertPrompt()">
+    </div>
+    <div scrollY="true" id="menu">
+      <!-- <app-categorymenu></app-categorymenu> -->
+      <div class="menuItem" (click)="showItemByCategory('all')">
+          <div class="selectedLeftItem"></div>
+          <div class="selectedCenterItem">
+            <h6>All</h6>
+          </div>
+          <div class="selectedRightItem"></div>
+        </div>
+        <div class="menuItem" *ngFor="let category of categoryList" (click)="showItemByCategory(category.name)">
+          <div class="leftPart"></div>
+          <div class="centerPart">
+            <h6>{{category.name}}</h6>
+          </div>
+          <div class="rightPart"></div>
+        
+        </div>
+    </div>
+    
+  </div>
+
+  <h2  *ngIf="review=='show'; then shReview else hideReview"></h2>
+  <ng-template #shReview>
+    <div id="reviewModal">
+      <div id="closeDiv" (click)="close()">
+        <ion-icon name="close" id="closeReviewIcon" (click)="close()"></ion-icon>
+      </div>
+      <h5 id="reviewTitle">تقییم المطعم</h5>
+      <div id="favStar">
+        <h1 *ngIf="vote == 'empty'; then emptyStar else fullStar"></h1>
+        <ng-template #emptyStar>
+            <ion-icon name="star-outline" class="favIcon" (click)="star1()"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon" (click)="star2()"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+        </ng-template>
+        <ng-template #fullStar>
+            <ion-icon name="star" class="favIcon" (click)="star1()"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon" (click)="star2()"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+            <ion-icon name="star-outline" class="favIcon"></ion-icon>
+        </ng-template>
+          
+      </div>
+      <div id="question">لماذا؟</div>
+      <div id="vote">0/5</div>
+      <textarea id="reviewContent"></textarea>
+      <ion-button expand="block" id="reviewBtn">ارسال</ion-button>
+    </div>
+  </ng-template>
+  <ng-template #hideReview>
+   
+  </ng-template>
+
+  <h2  *ngIf="details=='show'; then shDetails else hideDetails"></h2>
+    <ng-template #shDetails>
+        <div id="sideSection">
+            <ion-icon name="close" id="close" (click)="hideSideMenu()"></ion-icon>
+            <img *ngIf="foodDetails.photo" src="http://ace.iraq-soft.info/public/images/{{foodDetails.photo}}">
+            <h3>پیتزا</h3>
+            <h6 [innerHTML]="foodDetails.description" scrollY="true" id="sideDesc"></h6>
+            <div id="priceContainer">
+              <div id="time">
+                <p id="timeValue">{{foodDetails.time}} دقائق</p>
+                <p id="timeLabel">وقت التحضیر</p>
+              </div>
+              <div id="price">
+                <div id="line"></div>
+                <p id="priceLabel">السعر</p>
+                <p id="priceValue">{{foodDetails.price}}</p>
+              </div>
+            </div>
+            <h4 id="makeReview" (click)="showReview()">Make a Review</h4>
+          </div>
+    </ng-template>
+    <ng-template #hideDetails>
+     
+    </ng-template>  
+</ion-content>

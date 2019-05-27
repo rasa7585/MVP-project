@@ -18,6 +18,33 @@
 				</View>
 			</View>
 			<View id="line"></View>
+			<ListView defaultItemTemplate="template" id="listView">
+				<Templates>
+					<ItemTemplate name="template">
+						<View id='outer'>
+							<View id="top">
+								<Label id="happeningname">Name of Happening</Label>
+								<View id="participantView">
+									<Label id="participant">5</Label>
+								</View>
+							</View>
+							<Label id="location">Herat - Afghanistan</Label>
+							<ProgressBar id="progress"></ProgressBar>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="section">
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+					<ListItem />
+				</ListSection>
+			</ListView>
 		</ScrollView>
+		<ImageView id="add" onClick="addHappening"/>
 	</Window>
 </Alloy>

@@ -10,5 +10,6 @@
 			</View>
 			<Label id="signup" onClick="openUserRegisterationPage">Sign Up</Label>
 		</CardView>
+		
 	</Window>
 </Alloy>

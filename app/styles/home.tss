@@ -2,14 +2,14 @@
 	backgroundColor: 'white',
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	top: 0,
-	layout: "vertical"
+	top: 0
 }
 
 "#userContainer":{
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE,
-	layout: 'horizontal'
+	layout: 'horizontal',
+	top: 0
 }
 
 "#photoContainer": {
@@ -36,7 +36,8 @@
 	width: "90%",
 	height: 1,
 	backgroundColor: "#95419fd9",
-	top: 15
+	top: 15,
+	top: 115
 }
 
 "#profilePhoto": {
@@ -93,4 +94,83 @@
 
 	width:Ti.UI.FILL,
 	textAlign: "left"
+}
+
+"#add":{
+	image: "/images/fab.png",
+	bottom: 15,
+	right: 15
+}
+
+"#top":{
+	width:Titanium.UI.FILL,
+	// height:20
+	height:Titanium.UI.SIZE,
+	top: 5
+}
+
+"#happeningname":{
+	text: "Happening name",
+	font:{
+		fontSize: 16
+	},
+	color: "#666",
+	left: 0
+}
+
+"#location":{
+	width:Ti.UI.FILL,
+	textAlign: "left",
+	font:{
+		fontSize: 14
+	},
+	color: "#666"
+}
+
+"#listView":{
+	width: "86%",
+	height:Titanium.UI.SIZE,
+	top: 115,
+	separatorColor: "#e8f2fe"
+}
+
+"#outer":{
+	// layout:"horizontal",
+	width: "100%",
+	height: 120,
+	top: '10dp'
+}
+
+"#participantView":{
+	width: 25,
+	height: 30,
+	backgroundColor: "#419fd9",
+	borderRadius: 10,
+	right:0,
+}
+
+"#participant":{
+	text: "5",
+	width:Titanium.UI.FILL,
+	textAlign: "center",
+	color: "#fff",
+	font:{
+		fontSize: 10,
+		fontWeight: "bold"
+	}
+}
+
+"#progress":{
+	// top: 25,
+	bottom: 10,
+	width: Titanium.UI.FILL,
+	min: 0,
+	max: 100,
+	value: 30,
+	color: '#419fd9',
+	message: '30%',
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	}
 }
