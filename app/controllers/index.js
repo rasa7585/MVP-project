@@ -11,9 +11,10 @@ function openHome(){
 	// Alloy.createController('listOfFriends').getView().open();
 }
 
+
 function login(){
 	
-	var email = $.textfieldTest.getValue();
+	var email = $.username.getValue();
 	var password = $.password.getValue();
 	var matchedEmails = [];
 	var matchedPassword;

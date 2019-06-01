@@ -1,15 +1,42 @@
 <Alloy>
 	<Window id="loginWin">
-		<CardView class="container">
+		<ScrollView id="scrollView">
+			<!--<CardView class="container">
 			<Label id="title"></Label>
 			<Widget src="input-materialdesign" id="textfieldTest"/>
-			<!-- <Widget src="input-materialdesign" id="email"/> -->
 			<Widget src="input-materialdesign" id="password"/>
 			<View id="loginBtn" onClick="login">
-				<Label id="loginBtnLabel">Login</Label>
+			<Label id="loginBtnLabel">Login</Label>
 			</View>
 			<Label id="signup" onClick="openUserRegisterationPage">Sign Up</Label>
-		</CardView>
-		
+			</CardView> -->
+			<ImageView id="topImg"/>
+			<View id="content">
+				<View id="usernameView">
+					<Label id="userIcon"></Label>
+					<TextField id="username" />
+				</View>
+				<View id="passwordView">
+					<Label id="passwordIcon"></Label>
+					<TextField id="password" />
+				</View>
+				<Label id="forgetPass">Forget Password?</Label>
+				<Button id="loginBtn" onClick="login">Login</Button>
+				<View id="question">
+					<Label id="questionLabel">Don't Have Account?</Label>
+					<Label id="signup" onClick="openUserRegisterationPage">SIGN UP</Label>
+				</View>
+				<View id="lingContainer">
+					<View id="leftLine"></View>
+					<Label id="or">Or</Label>
+					<View id="rightLine"></View>
+				</View>
+				<View id="faceContainer">
+					<Label id="faceIcon"></Label>
+				</View>
+			</View>
+			<View id="leftView"></View>
+			<View id="rightView"></View>
+		</ScrollView>
 	</Window>
 </Alloy>
