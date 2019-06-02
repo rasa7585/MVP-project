@@ -1,7 +1,7 @@
 "#loginWin":{
 	backgroundColor: "#1a1360",
 	theme: "Theme.AppCompat.Fullscreen",
-	orientationModes:[Titanium.UI.LANDSCAPE_RIGHT]
+	orientationModes:[Titanium.UI.PORTRAIT]
 }
 
 "#scrollView":{

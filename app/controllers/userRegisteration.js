@@ -89,6 +89,10 @@ function createUser() {
 
 }
 
+function login(){
+	Alloy.createController("index").getView().open();
+}
+
 $.userWind.addEventListener("android:back", function(e){
 	
 });

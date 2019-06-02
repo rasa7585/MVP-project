@@ -1,84 +1,194 @@
-".userRegWin":{
-	backgroundColor: "#fff",
-	// layout: "vertical",
-	theme: "Theme.AppCompat.Fullscreen"
+"#userWind":{
+	backgroundColor: "#1a1360",
+	theme: "Theme.AppCompat.Fullscreen",
+	orientationModes:[Titanium.UI.PORTRAIT]
 }
 
-".container": {
-	backgroundColor: "#efefef",
-	width: "80%",
-	height: 450,
+"#scrollView":{
+	width:Titanium.UI.FILL,
+	height:"100%",
+	top:0,
+}
+
+"#topImg":{
+	image:"/images/photos/topPic.jpg",
+	height:"31%",
+	width: Titanium.UI.FILL,
+	top:0
+}
+
+"#content":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
 	layout: "vertical",
-	borderRadius: 5,
-	// top: 50,
-	padding: 30
+	top:"34%",
 }
 
-"#title":{
-	text: "User Registeration",
+"#usernameView":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:15
+}
+
+"#username":{
+	width:"90%",
+	height:50,
+	hintText: "Username",
+	color:"#fff",	
 	font:{
-		fontSize: 24,
-		fontWeight: "bold"
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
 	},
-	color: "#419fd9",
-	width: "100%",
-	textAlign: "center"
+	backgroundColor:"#150f55",
+	borderRadius:7,
+	left:"10%"
 }
 
-"#email": {
-	titleHint: "Email",
-	maskType: "email",
-	animationType: 'leftToRight',
-	required: "Required field"
+"#userIcon":{
+	width:"10%",
+	height:Titanium.UI.FILL,
+	left:0,
+	text:"\uf007",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:14
+	},
+	color:"#fff",
+	textAlign:"center"
 }
 
-"#password":{
-	titleHint: "Password",
-	password: true,
-	animationType: 'leftToRight',
-	minLength: 8,
-	required: "Required field"
-
+"#nameView":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%"
 }
 
 "#name":{
-	titleHint:"Name",
-	animationType: 'leftToRight',
-	required: "Required field"
-}
-
-"#loginBtn":{
-	width:Titanium.UI.FILL,
-	height: 40,
-	backgroundColor: "#419fd9",
-	top: 20
-}
-
-"#loginBtnLabel":{
-	text: "Create Account",
-	color: "#efefef",
+	width:"90%",
+	height:50,
+	hintText: "Name",
+	color:"#fff",	
 	font:{
-		fontWeight: "bold"
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
 	},
-	textAlign: "center",
-	width:Titanium.UI.FILL
+	backgroundColor:"#150f55",
+	borderRadius:7,
+	left:"10%"
+}
+
+"#nameIcon":{
+	width:"10%",
+	height:Titanium.UI.FILL,
+	left:0,
+	text:"\uf007",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontStyle: "regular",
+		fontSize:14
+	},
+	color:"#fff",
+	textAlign:"center"
+}
+
+"#passwordView":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top: 15
+}
+
+"#passwordIcon":{
+	width:"10%",
+	height:Titanium.UI.FILL,
+	left:0,
+	text:"lock",
+	font:{
+		fontFamily:"material_icons",
+		fontSize:14
+	},
+	color:"#fff",
+	textAlign:"center"
+}
+
+"#password":{
+	width:"80%",
+	height:50,
+	hintText: "Password",
+	color:"#fff",	
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize: 13
+	},
+	backgroundColor:"#150f55",
+	borderRadius:7,
+	passwordMask: true
 }
 
 "#photoView":{
-	width:75,
-	height:75,
-	backgroundColor:"#fff",
-	left:0,
-	borderRadius:5
+	width:90,
+	height:90,
+	backgroundColor:"#150f55",
+	// left: 0,
+	top:15,
+	borderRadius: 7,
+	left:"10%"
 }
 
 "#photoIcon":{
 	text:"\uf030",
 	font:{
-		fontFamily:"fontIcon.ttf",
-		fontSize:34
+		fontSize:26,
+		fontFamily:"fontIcon.ttf"
 	},
-	color:"#419fd9",
+	color:"#fff",
+	width:Titanium.UI.FILL,
+	textAlign:"center"
 }
+
+"#loginBtn":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#fff",
+	color:"#80150f55",
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	}, 
+	top:25,
+	borderRadius:7
+}
+
+"#question":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	layout: "horizontal",
+	top:20
+}
+
+"#questionLabel":{
+	color:"#80ffffff",
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	
+}
+
+"#signin":{
+	color:"#ffffff",
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontWeight: "bold",
+		fontSize:13
+	},
+	left:10
+}
+
+
 
 
