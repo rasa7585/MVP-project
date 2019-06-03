@@ -30,7 +30,7 @@ function openGallery() {
 
 function checkEmail() {
 
-	var email = $.email.getValue();
+	var email = $.username.getValue();
 	var matchEmails = [];
 	var matchEmailsL = 0;
 	
@@ -55,7 +55,7 @@ function checkEmail() {
 
 function createUser() {
 	var name = $.name.getValue();
-	var email = $.email.getValue();
+	var email = $.username.getValue();
 	var password = $.password.getValue();
 
 	if (name != '' && email != '' && password != '') {
