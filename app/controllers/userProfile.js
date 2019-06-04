@@ -63,6 +63,19 @@ function setInfo() {
 	} catch(e) {
 		alert("Please login");
 	}
+	
+	var activity = $.profileWin.activity;
+	activity.onCreateOptionsMenu = function(e){
+		var menu = e.menu;
+		var logout = menu.add({
+			title:"Logout"
+		});
+		
+		logout.addEventListener("click", function(e){
+			Alloy.createController("index").getView().open();
+		});
+	};
+	
 
 }
 

@@ -1,52 +1,83 @@
-"#holeContainer": {
+"#homeWin":{
+	backgroundColor: "#fff",
+	theme: "Theme.AppCompat.Fullscreen"
+}
+
+"#scrollView": {
 	backgroundColor: 'white',
-	height: Ti.UI.FILL,
+	height: "73%",
 	width: Ti.UI.FILL,
-	top: 0
+	top: "17%"
 }
 
 "#userContainer":{
 	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE,
-	layout: 'horizontal',
-	top: 0
+	height: "17%",
+	top: 0,
+	backgroundColor: "#1a1360"
+}
+
+"#leftCircle":{
+	width: 200,
+	height: 200,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	left: -100,
+	top: -100
+}
+
+"#rightCircel":{
+	width: 100,
+	height: 100,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	right: -20,
+	top: -20
 }
 
 "#photoContainer": {
-	backgroundColor: 'white',
-	// width: Ti.UI.FILL,
-	left: 30,
-	top: 20,
-	// borderColor:'blue',
-	// borderWidth:1,
-	width:Titanium.UI.SIZE,
+	backgroundColor: 'transparent',
+	right: 20,
+	width: Titanium.UI.SIZE,
 	height:Titanium.UI.SIZE
 }
 
 "#userInfo":{
-	width: 200,
+	width: "50%",
 	height:Titanium.UI.SIZE,
 	layout: "vertical",
-	left: 10,
-	bottom: 10,
+	left: 20,
 	backgroundColor: "transparent"
 }
 
-"#line":{
-	width: "90%",
-	height: 1,
-	backgroundColor: "#95419fd9",
-	top: 15,
-	top: 115
+"#title":{
+	font:{
+		fontSize: 24,
+		fontFamily: "Cairo-Bold.ttf",
+		fontWeight: "bold"
+	},
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "left"
+}
+
+"#todayDesc":{
+	font:{
+		fontSize: 12,
+		fontFamily: "Cairo-Regular.ttf"
+	},
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "left"
 }
 
 "#profilePhoto": {
 	backgroundColor: 'transparent',
-	height: '80dp',
-	width: '80dp',
+	height: '60dp',
+	width: '60dp',
 	borderRadius: 70,
-	borderColor: '#419fd9',
-	borderWidth: '2dp'
 }
 
 "#defauleProfImg": {
@@ -59,118 +90,52 @@
 
 "#profileImg": {
 	height: Ti.UI.FILL,
-	width: Ti.UI.FILL
-}
-
-"#nameContainer": {
-	backgroundColor: 'white',
-	height: Ti.UI.SIZE,
 	width: Ti.UI.FILL,
-	top: 0
+	zIndex:1000
 }
 
-"#name": {
-	color: '#3a3a3a',
-	font: {
-		fontSize: '17dp'
-	},
-	top: '0dp',
-	width:Ti.UI.FILL,
-	textAlign: "left"
-}
-
-"#emailContainer": {
-	backgroundColor: 'white',
-	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE
-}
-
-"#email": {
-	color: '#419fd9',
-	left: '5dp',
-	font: {
-		fontSize: '15dp'
-	},
-
-	width:Ti.UI.FILL,
-	textAlign: "left"
-}
-
-"#add":{
-	image: "/images/fab.png",
-	bottom: 15,
-	right: 15
-}
-
-"#top":{
-	width:Titanium.UI.FILL,
-	// height:20
+"#happeningContainer":{
+	width:"95%",
 	height:Titanium.UI.SIZE,
-	top: 5
-}
-
-"#happeningname":{
-	text: "Happening name",
-	font:{
-		fontSize: 16
-	},
-	color: "#666",
-	left: 0
-}
-
-"#location":{
-	width:Ti.UI.FILL,
-	textAlign: "left",
-	font:{
-		fontSize: 14
-	},
-	color: "#666"
-}
-
-"#listView":{
-	width: "86%",
-	height:Titanium.UI.SIZE,
-	top: 115,
-	separatorColor: "#e8f2fe"
-}
-
-"#outer":{
 	// layout:"horizontal",
-	width: "100%",
-	height: 120,
-	top: '10dp'
+	top:0
 }
 
-"#participantView":{
-	width: 25,
-	height: 30,
-	backgroundColor: "#419fd9",
-	borderRadius: 10,
-	right:0,
-}
-
-"#participant":{
-	text: "5",
+"#addHappening":{
 	width:Titanium.UI.FILL,
-	textAlign: "center",
-	color: "#fff",
-	font:{
-		fontSize: 10,
-		fontWeight: "bold"
-	}
+	height:"10%",
+	bottom:0
 }
 
-"#progress":{
-	// top: 25,
-	bottom: 10,
-	width: Titanium.UI.FILL,
-	min: 0,
-	max: 100,
-	value: 30,
-	color: '#419fd9',
-	message: '30%',
-	font: {
-		fontSize: 14,
-		fontWeight: 'bold'
-	}
+"#addBtn":{
+	width:"60%",
+	height:"70%",
+	backgroundColor:"#1a1360",
+	borderRadius:7,
+	
+}
+
+"#labelContainer":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	layout:"horizontal"
+}
+
+"#addIcon":{
+	text:"add_circle_outline",
+	font:{
+		fontFamily:"material_icons.ttf",
+		fontSize:24
+	},
+	color:"#fff",
+	
+}
+
+"#btnLabel":{
+	text:"Create Happening",
+	color:"#fff",
+	font:{
+		fontFamily:"Cairo-Reqular.ttf",
+	},
+	left:15
 }

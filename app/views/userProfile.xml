@@ -1,5 +1,5 @@
 <Alloy>
-	<Window onOpen="setInfo">
+	<Window onOpen="setInfo" id="profileWin">
 		<ScrollView id="holeContainer">
 			<View id="photoContainer">
 				<View id="profilePhoto" onClick="OpenUsers">

@@ -1,50 +1,30 @@
 <Alloy>
 	<Window onOpen="setInfo" id="homeWin">
-		<ScrollView id="holeContainer">
-			<View id="userContainer">
-				<View id="photoContainer" onClick="showProfile">
-					<View id="profilePhoto">
-						<Label id="defauleProfImg" text="person"></Label>
-						<ImageView id="profileImg" />
-					</View>
-				</View>
-				<View id="userInfo" onClick="showProfile">
-					<View id="nameContainer">
-						<Label id="name"></Label>
-					</View>
-					<View id="emailContainer">
-						<Label id="email"></Label>
-					</View>
+		<View id="userContainer">
+			<View id="userInfo" onClick="showProfile">
+				<Label id="title">Happenings</Label>
+				<Label id="todayDesc">Today you have 9 Happenings</Label>
+			</View>
+			
+			<View id="leftCircle"></View>
+			<View id="rightCircel"></View>
+			<View id="photoContainer" onClick="showProfile">
+				<View id="profilePhoto">
+					<!-- <Label id="defauleProfImg" text="person"></Label> -->
+					<ImageView id="profileImg" />
 				</View>
 			</View>
-			<View id="line"></View>
-			<ListView defaultItemTemplate="template" id="listView">
-				<Templates>
-					<ItemTemplate name="template">
-						<View id='outer'>
-							<View id="top">
-								<Label id="happeningname">Name of Happening</Label>
-								<View id="participantView">
-									<Label id="participant">5</Label>
-								</View>
-							</View>
-							<Label id="location">Herat - Afghanistan</Label>
-							<ProgressBar id="progress"></ProgressBar>
-						</View>
-					</ItemTemplate>
-				</Templates>
-				<ListSection id="section">
-					<ListItem />
-					<ListItem />
-					<ListItem />
-					<ListItem />
-					<ListItem />
-					<ListItem />
-					<ListItem />
-					<ListItem />
-				</ListSection>
-			</ListView>
+		</View>
+		<ScrollView id="scrollView">
+			<View id="happeningContainer"></View>
 		</ScrollView>
-		<ImageView id="add" onClick="addHappening"/>
+		<View id="addHappening" onClick="addHappening">
+			<View id="addBtn">
+				<View id="labelContainer">
+					<Label id="addIcon"></Label>
+					<Label id="btnLabel"></Label>
+				</View>
+			</View>
+		</View>
 	</Window>
 </Alloy>
