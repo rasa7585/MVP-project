@@ -1,30 +1,251 @@
-"#holeContainer": {
-	height: Ti.UI.FILL,
-	width: Ti.UI.FILL,
-	backgroundColor: '#efefef',
+"#detailsWin":{
+	backgroundColor: "#fff",
+	theme: "Theme.AppCompat.Fullscreen"
 }
 
-"#container": {
+"#userContainer":{
+	width:Titanium.UI.FILL,
+	height: "17%",
+	top: 0,
+	backgroundColor: "#1a1360"
+}
+
+"#leftCircle":{
+	width: 200,
+	height: 200,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	left: -100,
+	top: -100
+}
+
+"#rightCircel":{
+	width: 100,
+	height: 100,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	right: -20,
+	top: -20
+}
+
+"#title":{
+	font:{
+		fontSize: 24,
+		fontFamily: "Cairo-Bold.ttf",
+		fontWeight: "bold"
+	},
+	color: "#fff",
+	width:Titanium.UI.FILL,
+	textAlign: "left"
+}
+
+"#userInfo":{
+	width: "50%",
+	height:Titanium.UI.SIZE,
+	layout: "vertical",
+	left: 20
+}
+
+"#tabsContainer":{
+	height: Titanium.UI.SIZE,
+	width: '70%',
+	bottom: '0dp',
+	zIndex: 10000
+}
+
+"#indicatorsContainer": {
 	height: Ti.UI.SIZE,
-	width: '95%',
-	backgroundColor: 'white',
+	width: '52%',
+	top: '16%',
+	zIndex: 10000,
+	// backgroundColor: 'yellow'
+}
+
+"#indicatorR": {
+	height: '13dp',
+	width: '13dp',
+	backgroundColor: '#1a1360',
+	left: '2dp',
+	bottom: '2dp'
+}
+
+"#indicatorF": {
+	height: '13dp',
+	width: '13dp',
+	backgroundColor: '#1a1360',
+	right: '2dp',
+	bottom: '2dp'
+}
+
+"#tabsContainer": {
+	height: '33%',
+	width: '70%',
+	bottom: '0dp',
+	layout: 'vertical'
+}
+
+"#lbls": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	// backgroundColor: 'red'
+}
+
+"#lines": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	// backgroundColor: 'green'
+}
+
+"#registeredUsers": {
+	color: "#fff",
+	font: {
+		fontSize: '15dp',
+		fontFamily: "Cairo-Bold.ttf"
+	},
+	left: '0dp',
+	top: '0dp'
+}
+
+"#facebookUsers": {
+	color: "#fff",
+	font: {
+		fontSize: '15dp',
+		fontFamily: "Cairo-Bold.ttf"
+	},
+	right: '0dp',
+	top: '0dp',
+	opacity: 0.5
+}
+
+"#lineR": {
+	backgroundColor: '#fff',
+	width: '110dp',
+	height: '1dp',
+	left: '0dp'
+}
+
+"#lineF": {
+	backgroundColor: '#fff',
+	width: '100dp',
+	height: '1dp',
+	right: '0dp'
+}
+
+"#searchContainer": {
+	height: '10%',
+	width: Ti.UI.FILL,
+	// top: '17%',
+	backgroundColor: '#fff',
+	borderColor: '#dbdbdb',
 	layout: 'horizontal',
+}
+
+"#shadow": {
+	height: '0.5%',
+	width: Ti.UI.FILL,
+	// top: '17.5%',
+	backgroundColor: '#dbdbdb',
+	opacity: 0.5
+}
+
+"#iconContainer": {
+	height: Ti.UI.FILL,
+	width: '15%',
+	// backgroundColor: 'green'
+}
+
+"#searchIcon": {
+	text: 'search',
+	font: {
+		fontFamily:  'material_icons.ttf',
+		fontSize: '30dp'
+	},
+	color: "#595858"
+}
+
+'#searchField': {
+	color: "#595858",
+	width: '80%',
+	touchFeedbackColor: 'red'
+}
+
+"#inviteContainer": {
+	height: '8%',
+	width: Ti.UI.FILL,
+	backgroundColor: '#1a1360',
+	// layout: 'horizontal',
+	bottom: '0dp'
+}
+
+"#link": {
+	left: '10dp',
+	color: '#fff',
+	left: '20dp',
+	font:{
+		fontFamily: "Cairo-Regular.ttf"
+	}
+	// top: '20%'
+}
+
+"#inviteBtn": {
+	height: '30dp',
+	width: '90dp',
+	backgroundColor: '#fff',
+	right: '20dp',
+	// top: '20%'
+}
+
+"#listViewContainer": {
+	// backgroundColor: "green",
+	height: '71.5%',
+	width: Ti.UI.FILL
+}
+
+"#contentContainer": {
+	height: '83%',
+	width: Ti.UI.FILL,
+	bottom: '0dp',
+	layout: 'vertical'
+}
+
+"#btnsContainer": {
+	height: '10%',
+	width: Ti.UI.FILL,
+	backgroundColor: '#fff'
+}
+
+////////////////////////style of listView
+
+"#container": {
+	height: '60dp',
+	// backgroundColor: 'blue',
+	width: '90%',
 	top: '10dp',
-	borderRadius: 5
+	layout: 'horizontal'
+}
+
+"#leftContainer": {
+	height: Ti.UI.FILL,
+	width: '70%',
+	layout: 'horizontal'
+	// backgroundColor: 'red',
+}
+
+"#rightContainer": {
+	height: Ti.UI.FILL,
+	width: '30%',
+	// backgroundColor: 'yellow'
 }
 
 "#photoContainer": {
-	height: Ti.UI.SIZE,
-	width: '30%'
-}
-
-"#photo": {
-	height: '80dp',
-	width: '80dp',
-	borderRadius: 40,
-	backgroundColor: 'white',
-	top: '10dp',
-	borderColor: "#dbdbdb"
+	height: '50dp',
+	width: '50dp',
+	borderColor: '#5bffff',
+	borderRadius: 25,
+	left: '0dp',
+	borderWidth: '2dp'
 }
 
 "#profilePhoto": {
@@ -32,45 +253,38 @@
 	width: Ti.UI.FILL
 }
 
-"#defaultIMG": {
+"#defaultPic": {
 	font: {
 		fontFamily: 'material_icons.ttf',
-		fontSize: '55dp'
+		fontSize: '40dp'
 	},
 	color: '#dbdbdb'
 }
 
-"#nameContainer": {
-	height: Ti.UI.SIZE,
-	width: '40%'
+"#profilePhoto": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
 }
 
 "#name": {
-	font:{
-		fontSize: '17dp'
-	},
-	color: '#4b4d4f',
-	left: '0dp',
-	top: '30dp'
-}
-
-"#btnContainer": {
-	height: '100dp',
-	width: '30%',
-	// backgroundColor: 'orange'
-}
-
-"#addFriendBtn": {
-	height: '30dp',
-	width: '90%',
-	backgroundColor: "#419fd9",
-	top: '50dp',
-	left: '0dp'
-}
-
-"#addFriendLBL": {
-	color: 'white',
+	color: 'black',
+	left: '10dp',
 	font: {
-		fontSize: '15dp'
+		fontSize: "Cairo-Bold.ttf"
+	}
+}
+
+"#status": {
+	color: '#29c631',
+	font: {
+		fontWeight: 'bold',
+		fontFamily: "Cairo-Regular.ttf"
+	},
+	right: '0dp'
+}
+
+"#invite":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf"
 	}
 }

@@ -97,7 +97,7 @@
 "#happeningContainer":{
 	width:"95%",
 	height:Titanium.UI.SIZE,
-	// layout:"horizontal",
+	layout:"horizontal",
 	top:0
 }
 

@@ -1,72 +1,89 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
-$.allUsersWin.setTitle("MVP Users");
-var label = Ti.UI.createLabel({
-	text:"There is not any user",
-	color:"#aaa",
-	font:{
-		fontSize:20
-	},
-	width:Ti.UI.FILL,
-	textAlign:"center"
-});
-var items = [];
-var currentUserId = Ti.App.Properties.getInt("userId");
 
-function loadUsers() {
+$.indicatorR.transform=Ti.UI.create2DMatrix().rotate(45);
+$.indicatorF.transform=Ti.UI.create2DMatrix().rotate(45);
+$.indicatorF.hide();
+$.lineF.hide();
+
+
+///////////////////////temporarily assigned
+var happeningId = $.args.id;
+
+
+var friendItems = [];
+var registeredItems = [];
+
+function loadUsers(){
 	
-	items = [];
-	$.section.setItems([]);
-
-	var data = Alloy.Globals.db.execute('SELECT * FROM users WHERE id NOT IN (SELECT DISTINCT user_one_id FROM friends WHERE user_two_id=? UNION SELECT user_two_id FROM friends WHERE user_one_id=?) AND id NOT LIKE ?', currentUserId, currentUserId, currentUserId);
-
-	while (data.isValidRow()) {
-
-		items.push({
-			itemId : data.fieldByName('id'),
-			usersName : {
-				text : data.fieldByName('name')
+	registeredItems = [];
+	$.section.setItems([]); 
+	
+	var happeningData = Alloy.Globals.db.execute('SELECT * FROM participants WHERE happening_id=?', happeningId);
+	// var happeningData = Alloy.Globals.db.execute("SELECT * FROM participants WHERE happening_id = ?", happeningId);
+	var rsvp = null;
+	var color = null;
+	
+	while(happeningData.isValidRow()){
+		
+		if(happeningData.fieldByName('RSVP') == 'p'){
+			rsvp = 'Pending';
+			color = '#e5e216';
+		}else if(happeningData.fieldByName('RSVP') == 'y'){
+			rsvp = 'Coming';
+			color = '#03c564';
+		}else if(happeningData.fieldByName('RSVP') == 'n'){
+			rsvp = 'Not Coming';
+			color = '#e3000d';
+		}
+		
+		var userData = Alloy.Globals.db.execute('SELECT * FROM users WHERE id=?', happeningData.fieldByName('user_id'));
+		
+		registeredItems.push({
+			itemId: userData.fieldByName('id'),
+			userName: {
+				text: userData.fieldByName('name')
 			},
-			profileIMG : {
-				image : data.fieldByName('photo')
+			profileIMG: {
+				image: userData.fieldByName('photo')
+			},
+			status: {
+				text: rsvp,
+				color: color
 			}
 		});
-
-		data.next();
+		
+		happeningData.next();
 	}
 	
-	if(items.length == 0){
-		$.allUsersWin.remove($.holeContainer);
-		$.allUsersWin.layout = "";
-		$.allUsersWin.backgroundColor = "#fff";
-		$.allUsersWin.add(label);
-	}else{
-		$.section.items = items;	
-	}
-
+	$.section.items = registeredItems;
+	
 }
 
 loadUsers();
 
-
-
-function addfriendBtnClick(e) {
-
-	var clickedUserId = items[e.itemIndex].itemId;
-
-	var maxUser = null;
-	var minUser = null;
-
-	if (clickedUserId > currentUserId) {
-		maxUser = clickedUserId;
-		minUser = currentUserId;
-	} else {
-		maxUser = currentUserId;
-		minUser = clickedUserId;
-	}
+function showFriendsTab(){
 	
-	Alloy.Globals.db.execute('INSERT INTO friends (user_one_id, user_two_id, status, action_user_id) values('+ minUser +', '+ maxUser +', 0, '+ currentUserId +')');
-	alert('Request is sent');
-	loadUsers();
+	$.facebookUsers.opacity = 1;
+	$.registeredUsers.opacity = 0.5;
+	$.lineF.show();
+	$.lineR.hide();
+	$.indicatorF.show();
+	$.indicatorR.hide();
+	
+	$.section.items = friendItems;
+	
+}
+
+function showRegisteredTab(){
+	
+	$.facebookUsers.opacity = 0.5;
+	$.registeredUsers.opacity = 1;
+	$.lineF.hide();
+	$.lineR.show();
+	$.indicatorF.hide();
+	$.indicatorR.show();
+	
+	$.section.items = registeredItems;
 	
 }

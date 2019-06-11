@@ -10,7 +10,6 @@
 			<View id="rightCircel"></View>
 			<View id="photoContainer" onClick="showProfile">
 				<View id="profilePhoto">
-					<!-- <Label id="defauleProfImg" text="person"></Label> -->
 					<ImageView id="profileImg" />
 				</View>
 			</View>

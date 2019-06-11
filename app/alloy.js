@@ -46,6 +46,6 @@ ACS.Users.login({
 
 })();
 
-Alloy.Globals.db = Ti.Database.install("user_registration.db", "user_registration.db");
+Alloy.Globals.db = Ti.Database.install("mvp.db", "mvp.db");
 Alloy.Globals.material_icons = 'material_icons.ttf';
 

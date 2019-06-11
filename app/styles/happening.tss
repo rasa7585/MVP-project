@@ -1,47 +1,134 @@
 ".happeningWin":{
-	backgroundColor: "#fff",
-	// layout: "vertical",
+	backgroundColor: "#1a1360",
 	theme: "Theme.AppCompat.Fullscreen"
 }
 
-".container": {
-	backgroundColor: "#efefef",
-	width: "80%",
-	height: 450,
-	layout: "vertical",
-	borderRadius: 5,
-	// top: 50,
-	padding: 30
+"#scrollView":{
+	width:Titanium.UI.FILL,
+	height:"100%",
+	top:0,
+}
+
+"#topView":{
+	width:Titanium.UI.FILL,
+	height: "17%",
+	top: 0,
+	backgroundColor: "#1a1360"
 }
 
 "#title":{
-	text: "New Happening",
 	font:{
-		fontSize: 24,
+		fontSize: 28,
+		fontFamily: "Cairo-Bold.ttf",
 		fontWeight: "bold"
 	},
-	color: "#419fd9",
-	width: "100%",
+	color: "#fff",
+	width:Titanium.UI.FILL,
 	textAlign: "center"
 }
 
-"#location": {
-	titleHint: "location",
-	animationType: 'leftToRight',
-	required: "Required field"
+"#line":{
+	width:"65%",
+	height:1,
+	backgroundColor:"#fff",
+	bottom:10
+	
+}
+
+"#leftCircle":{
+	width: 200,
+	height: 200,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	left: -100,
+	top: -100
+}
+
+"#rightCircel":{
+	width: 100,
+	height: 100,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	right: -20,
+	top: -20
+}
+
+"#content":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: "vertical",
+	top:"34%",
+}
+
+"#happeningName":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:15
+}
+
+"#happeningTextField":{
+	width:"100%",
+	height:50,
+	hintText: " Name",
+	color:"#fff",	
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	backgroundColor:"#150f55",
+	borderRadius:7,
+}
+
+"#location":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:15
+}
+
+"#locationTextField":{
+	width:"100%",
+	height:50,
+	hintText: " Location",
+	color:"#fff",	
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	backgroundColor:"#150f55",
+	borderRadius:7,
 }
 
 "#budget":{
-	titleHint: "Budget",
-	animationType: 'leftToRight',
-	required: "Required field"
+	width:"80%",
+	height:50,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:15
+}
 
+"#budgetTextField":{
+	width:"100%",
+	height:50,
+	hintText: "Budget",
+	color:"#fff",	
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	backgroundColor:"#150f55",
+	borderRadius:7,
 }
 
 "#priContainer":{
-	width:Titanium.UI.FILL,
+	width:"80%",
 	height:50,
-	
+	top:15
 }
 
 "#publicContainer":{
@@ -63,7 +150,7 @@
 	font:{
 		fontSize:14,
 	},
-	color:"#555",
+	color:"#fff",
 }
 
 "#privateLabel":{
@@ -71,7 +158,7 @@
 	font:{
 		fontSize:14,
 	},
-	color:"#555",
+	color:"#fff",
 }
 
 "#publicRadio":{
@@ -84,26 +171,17 @@
 	left:15
 }
 
-"#name":{
-	titleHint:"Name",
-	animationType: 'leftToRight',
-	required: "Required field"
-}
-
-"#createHappening":{
-	width:Titanium.UI.FILL,
-	height: 40,
-	backgroundColor: "#419fd9",
-	top: 20
-}
-
-"#happeningBtnLabel":{
-	color: "#efefef",
+"#saveBtn":{
+	width:"80%",
+	height:50,
+	backgroundColor:"#fff",
+	color:"#80150f55",
 	font:{
-		fontWeight: "bold"
-	},
-	textAlign: "center",
-	width:Titanium.UI.FILL
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	}, 
+	top:25,
+	borderRadius:7
 }
 
 

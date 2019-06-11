@@ -1,0 +1,58 @@
+<Alloy>
+	<View id="container">
+	<View id="topView">
+			<View id="userInfo">
+				<Label id="title">Live Music with Indian Ocean</Label>
+			</View>
+			
+			<View id="leftCircle"></View>
+			<View id="rightCircel"></View>
+			<View id="photoContainer">
+				<View id="profilePhoto">
+					<ImageView id="profileImg" />
+				</View>
+			</View>
+		</View>
+		<ScrollView id="scrollView">
+			<CardView id="happeningDesc">
+				<Label class="desc">Video provides a powerful way to help you prove your point. You can also type a keyword to search online for the video that best fits your document.</Label>
+				<Label class="desc">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. </Label>
+			</CardView>
+			
+			<CardView id="happeningInfo">
+				<View id="createdDate">
+					<Label id="dateIcon"></Label>
+					<Label id="dateLabel">22 May 2019 07:00 PM onward</Label>
+				</View>
+				<View id="locationView">
+					<Label id="locationIcon"></Label>
+					<Label id="locationLabel">Melbourn, Australia</Label>
+				</View>
+				<View id="budgetView">
+					<Label id="budgetIcon"></Label>
+					<Label id="budgetLabel">Budget: 2005</Label>
+				</View>
+				<View id="bookingView">
+					<Label id="bookingIcon"></Label>
+					<Label id="bookingLabel">Booking/Reservation</Label>
+				</View>
+				
+			</CardView>
+			<View id="buttons">
+				<Label id="rsvp">RSVP</Label>
+				<View id="btnContainer">
+					<Button id="yes"></Button>
+					<Button id="no"></Button>
+				</View>
+			</View>
+			<View id="participantView">
+				<Label id="participantLabel">Participants</Label>
+				<View id="participantPhoto">
+					<View id="photos"></View>
+				</View>
+				<Label id="addIcon"></Label>
+			</View>
+			
+		</ScrollView>
+		</View>
+</Alloy>

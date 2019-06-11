@@ -1,0 +1,307 @@
+
+"#container" : {
+	width:Titanium.UI.FILL,
+  	height:Titanium.UI.FILL,
+  	backgroundColor: "#f8fcff",
+	layout: "vertical",
+}
+
+"#topView":{
+	width:Titanium.UI.FILL,
+	height: "17%",
+	top: 0,
+	backgroundColor: "#1a1360"
+}
+
+"#title":{
+	font:{
+		fontSize: 18,
+		fontFamily: "Cairo-Bold.ttf",
+		fontWeight: "bold"
+	},
+	color: "#fff",
+	width:"90%",
+	textAlign: "left"
+}
+
+"#leftCircle":{
+	width: 200,
+	height: 200,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	left: -100,
+	top: -100
+}
+
+"#rightCircel":{
+	width: 100,
+	height: 100,
+	borderRadius: 100,
+	backgroundColor: "#fff",
+	opacity: 0.3,
+	right: -20,
+	top: -20
+}
+
+"#photoContainer": {
+	backgroundColor: 'transparent',
+	right: 20,
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+}
+
+"#profilePhoto": {
+	backgroundColor: 'transparent',
+	height: '60dp',
+	width: '60dp',
+	borderRadius: 70,
+}
+
+"#defauleProfImg": {
+	font: {
+		fontFamily: 'material_icons.ttf',
+		fontSize: '70dp'
+	},
+	color: '#dbdbdb'
+}
+
+"#profileImg": {
+	image:"/images/photos/pic.png",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	zIndex:1000
+}
+
+"#scrollView":{
+	width:Titanium.UI.FILL,
+	height:"83%",
+	layout:"vertical"
+}
+
+"#happeningDesc":{
+	width:"90%",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	padding:15,
+	top:10,
+	backgroundColor:"#fff"
+}
+
+".desc":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:12
+	},
+	width:"100%",
+	textAlign:"left",
+	color:"#222"
+}
+
+"#happeningInfo":{
+	width:"90%",
+	layout: "vertical",
+	padding:15,
+	top:10,
+	backgroundColor:"#fff"
+}
+
+"#createdDate":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+"#locationView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+"#budgetView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+"#dateIcon":{
+	text:"\uf073",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:16
+	},
+	color:"#1a1360",
+	left:0
+}
+
+"#dateLabel":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:12
+	},
+	color:"#1a1360",
+	left:50
+}
+
+"#locationIcon":{
+	text:"\uf5a0",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:18
+	},
+	color:"#1a1360",
+	left:0
+}
+
+"#locationLabel":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:15
+	},
+	color:"#1a1360",
+	left:50
+}
+
+"#budgetIcon":{
+	text:"\uf155",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:18
+	},
+	color:"#1a1360",
+	left:0
+}
+
+"#budgetLabel":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:15
+	},
+	color:"#1a1360",
+	left:50
+}
+
+"#bookingView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+}
+
+"#bookingIcon":{
+	text:"\uf14a",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:18
+	},
+	color:"#1a1360",
+	left:0
+}
+
+"#bookingLabel":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:15
+	},
+	color:"#1a1360",
+	left:50
+}
+
+"#buttons":{
+	width:"90%",
+	height:Titanium.UI.SIZE,
+	top: 18
+}
+
+"#rsvp":{
+	text:"Rsvp",
+	left:0,
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:14
+	},
+	color:"#1a1360",
+	textAlign:"left"
+}
+
+"#btnContainer":{
+	width:"50%",
+	height:Titanium.UI.SIZE,
+	//layout:"horizontal",
+	right:0
+}
+
+"#yes":{
+	title:"Yes",
+	backgroundColor:"#00c85d",
+	color:"#fff",
+	width:"48%",
+	height:30,
+	borderRadius:5,
+	left:0,
+	width:"50%",
+}
+
+"#no":{
+	title:"No",
+	backgroundColor:"#f4c6d0",
+	color:"#fff",
+	width:"48%",
+	height:30,
+	borderRadius:5,
+	right:0
+}
+
+"#participantView":{
+	width:"90%",
+	height:Titanium.UI.SIZE,
+	top:30
+}
+
+"#participantLabel":{
+	text:"Participants",
+	left:0,
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:14
+	},
+	color:"#1a1360",
+	textAlign:"left",
+	width:"30%",
+	height:Titanium.UI.SIZE
+}
+
+"#participantPhoto":{
+	width:"40%",
+	height:40,
+	right:"10%",
+}
+
+"#photos":{
+	width:90,
+	layout:"horizontal",
+	right:10
+}
+
+"#addIcon":{
+	text:"\uf055",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:24
+	},
+	color:"#00c85d",
+	right:0,
+	width:"10%"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

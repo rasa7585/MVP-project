@@ -1,20 +1,6 @@
 <Alloy>
 	<View id="container">
-		<View id="item1">
-			<ImageView id="happeningImg1" />
-			<View id="middel1"></View>
-			<View id="topView1">
-				<View id="completedTaskPresentage">
-					<Label id="presetage">95 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
-		</View>
-		<View id="item">
+		<View id="item" onClick="showDetails">
 			<ImageView id="happeningImg" />
 			<View id="middel"></View>
 			<View id="topView">
@@ -26,77 +12,6 @@
 					<Label id="desc"></Label>
 				</View>
 			</View>
-
-		</View>
-		<View id="item">
-			<ImageView id="happeningImg" />
-			<View id="middel"></View>
-			<View id="topView">
-				<View id="completedTaskPresentage" backgroundColor="#ff800d">
-					<Label id="presetage">65 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
-		</View>
-		<View id="item">
-			<ImageView id="happeningImg" />
-			<View id="middel"></View>
-			<View id="topView">
-				<View id="completedTaskPresentage" backgroundColor="#ff800d">
-					<Label id="presetage">65 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
-		</View>
-		<View id="item">
-			<ImageView id="happeningImg" />
-			<View id="middel"></View>
-			<View id="topView">
-				<View id="completedTaskPresentage" backgroundColor="#e3000d">
-					<Label id="presetage">25 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
-		</View>
-		<View id="item">
-			<ImageView id="happeningImg" />
-			<View id="middel"></View>
-			<View id="topView">
-				<View id="completedTaskPresentage" backgroundColor="#03c564">
-					<Label id="presetage">80 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
-		</View>
-		<View id="item">
-			<ImageView id="happeningImg" />
-			<View id="middel"></View>
-			<View id="topView">
-				<View id="completedTaskPresentage" backgroundColor="#ff800d">
-					<Label id="presetage">70 %</Label>
-				</View>
-				<View id="info">
-					<Label id="title"></Label>
-					<Label id="desc"></Label>
-				</View>
-			</View>
-
 		</View>
 	</View>
 </Alloy>

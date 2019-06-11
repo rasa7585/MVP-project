@@ -1,23 +1,34 @@
 <Alloy>
 	<Window class="happeningWin" id="happeningWin">
-		<CardView class="container">
-			<Label id="title"></Label>
-			<Widget src="input-materialdesign" id="name"/>
-			<Widget src="input-materialdesign" id="location"/>
-			<Widget src="input-materialdesign" id="budget"/>
-			<View id="priContainer">
-				<View id="publicContainer">
-					<Label id="publicLabel">Public</Label>
-					<ImageView id="publicRadio" />
-				</View>
-				<View id="privateContainer">
-					<Label id="privateLabel">Public</Label>
-					<ImageView id="privateRadio" />
-				</View>
+		<ScrollView id="scrollView">
+			<View id="topView">
+				<Label id="title">New Happening</Label>
+				<View id="line"></View>
+				<View id="leftCircle"></View>
+				<View id="rightCircel"></View>
 			</View>
-			<View id="createHappening">
-				<Label id="happeningBtnLabel">Save</Label>
+			<View id="content">
+				<View id="happeningName">
+					<TextField id="happeningTextField" />
+				</View>
+				<View id="location">
+					<TextField id="locationTextField" />
+				</View>
+				<View id="budget">
+					<TextField id="budgetTextField" />
+				</View>
+				<View id="priContainer">
+					<View id="publicContainer" onClick="publicClicked">
+						<Label id="publicLabel">Public</Label>
+						<ImageView id="publicRadio" />
+					</View>
+					<View id="privateContainer" onClick="privateClicked">
+						<Label id="privateLabel">Private</Label>
+						<ImageView id="privateRadio" />
+					</View>
+				</View>
+				<Button id="saveBtn" onClick="createHappening">Save</Button>
 			</View>
-		</CardView>
+		</ScrollView>
 	</Window>
 </Alloy>

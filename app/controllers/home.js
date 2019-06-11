@@ -37,13 +37,12 @@ var args = $.args;
 // });
 
 function setInfo() {
+	$.happeningContainer.removeAllChildren();
 	var userData;
 	try {
 		userData = Alloy.Globals.db.execute('SELECT name,email,photo From users WHERE id=?', Ti.App.Properties.getInt("userId"));
 		if(userData.fieldByName("photo") == null || userData.fieldByName('photo') == ''){
 			$.profileImg.image = "/images/person.png";
-			// $.profilePhoto.remove($.profileImg);
-			// $.profilePhoto.add(defaultProfile);
 		}else{
 			$.profileImg.image = userData.fieldByName('photo');
 		}
@@ -51,17 +50,29 @@ function setInfo() {
 	} catch(e) {
 		alert("There is not any thing");
 	}
+	
 
-		$.happeningContainer.add(Alloy.createController("happeningItem").getView());
+	var data = Alloy.Globals.db.execute('SELECT * FROM happening WHERE accessibility="pu"');
+	
+	while(data.isValidRow()){
+
+		$.happeningContainer.add(Alloy.createController("happeningItem",{
+			'id':data.fieldByName('id')
+		}).getView());
+		
+		data.next();
+	}
+	
+		// $.happeningContainer.add(Alloy.createController("happeningItem").getView());
 	
 
 }
 
 setInfo();
 
-// $.homeWin.addEventListener("android:back", function(e){
-//
-// });
+$.homeWin.addEventListener("android:back", function(e){
+
+});
 
 function showProfile() {
 	Alloy.createController("userProfile").getView().open();
