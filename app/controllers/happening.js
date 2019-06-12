@@ -9,8 +9,11 @@ function createHappening() {
 
 	if (name != '' && location != '' && budget != '') {
 		Alloy.Globals.db.execute('INSERT INTO happening (name, location, budget, accessibility) values("' + name + '", "' + location + '", ' + budget + ', "' + accessibility + '")');
-		alert('Happening is successfully created');
-
+		Ti.UI.createNotification({
+			message:"Happening is successfully created",
+			duration: Ti.UI.NOTIFICATION_DURATION_LONG
+		}).show();
+		Alloy.createController("home").getView().open();
 		$.happeningTextField.setValue('');
 		$.locationTextField.setValue('');
 		$.budgetTextField.setValue('');
@@ -21,7 +24,10 @@ function createHappening() {
 		}
 
 	} else {
-		alert('Fill all the blanks!');
+		Ti.UI.createNotification({
+			message:"Fill all the blanks",
+			duration: Ti.UI.NOTIFICATION_DURATION_LONG
+		}).show();
 	}
 
 }
