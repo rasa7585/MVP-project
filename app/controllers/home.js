@@ -68,7 +68,14 @@ function setInfo() {
 
 }
 
-setInfo();
+function loadData(){
+    if(Alloy.Globals.updateHome){
+        setInfo();
+        Alloy.Globals.updateHome = false;
+    }
+}
+
+
 
 $.homeWin.addEventListener("android:back", function(e){
 

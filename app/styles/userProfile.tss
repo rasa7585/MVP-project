@@ -1,3 +1,7 @@
+"#profileWin":{
+	theme: "Theme.AppCompat.Fullscreen"
+}
+
 "#holeContainer": {
 	backgroundColor: 'white',
 	height: Ti.UI.FILL,

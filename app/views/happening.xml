@@ -11,6 +11,9 @@
 				<View id="happeningName">
 					<TextField id="happeningTextField" />
 				</View>
+				<View id="details">
+					<TextArea id="detailsTextField" />
+				</View>
 				<View id="location">
 					<TextField id="locationTextField" />
 				</View>
@@ -26,6 +29,9 @@
 						<Label id="privateLabel">Private</Label>
 						<ImageView id="privateRadio" />
 					</View>
+				</View>
+				<View id="photoView" onClick="openGallery">
+					<Label id="cameraIcon"></Label>
 				</View>
 				<Button id="saveBtn" onClick="createHappening">Save</Button>
 			</View>

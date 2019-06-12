@@ -59,7 +59,7 @@
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
 	layout: "vertical",
-	top:"34%",
+	top:"22%",
 }
 
 "#happeningName":{
@@ -90,7 +90,26 @@
 	left:"10%",
 	top:15
 }
+"#details":{
+	width:"80%",
+	height:Ti.UI.SIZE,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:15
+}
 
+"#detailsTextField":{
+	width:"100%",
+	height:150,
+	hintText: " Details",
+	color:"#fff",	
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	backgroundColor:"#150f55",
+	borderRadius:7,
+}
 "#locationTextField":{
 	width:"100%",
 	height:50,
@@ -181,7 +200,27 @@
 		fontSize:13
 	}, 
 	top:25,
-	borderRadius:7
+	borderRadius:7,
+	bottom:10
 }
 
+"#photoView":{
+	width:80,
+	height:80,
+	borderRadius:5,
+	backgroundColor:"#150f55",
+	left:"10%",
+	top:20
+}
+
+"#cameraIcon":{
+	text:"\uf030",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:24
+	},
+	color:"#fff",
+	width:Titanium.UI.FILL,
+	textAlign:"center"
+}
 

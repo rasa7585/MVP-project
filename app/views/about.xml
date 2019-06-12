@@ -15,8 +15,7 @@
 		</View>
 		<ScrollView id="scrollView">
 			<CardView id="happeningDesc">
-				<Label class="desc">Video provides a powerful way to help you prove your point. You can also type a keyword to search online for the video that best fits your document.</Label>
-				<Label class="desc">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. </Label>
+				<Label id="details" class="desc"></Label>
 			</CardView>
 			
 			<CardView id="happeningInfo">
@@ -38,13 +37,13 @@
 				</View>
 				
 			</CardView>
-			<View id="buttons">
+			<!-- <View id="buttons">
 				<Label id="rsvp">RSVP</Label>
 				<View id="btnContainer">
 					<Button id="yes"></Button>
 					<Button id="no"></Button>
 				</View>
-			</View>
+			</View> -->
 			<View id="participantView">
 				<Label id="participantLabel">Participants</Label>
 				<View id="participantPhoto">

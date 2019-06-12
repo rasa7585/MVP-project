@@ -6,9 +6,10 @@ var happeningInfo = Alloy.Globals.db.execute("SELECT * FROM happening WHERE id =
 
 $.locationLabel.text = happeningInfo.fieldByName("location");
 $.budgetLabel.text = "Budget: " + happeningInfo.fieldByName("budget");
+$.details.text = happeningInfo.fieldByName("details");
 $.title.text = happeningInfo.fieldByName("name");
+$.dateLabel.text = happeningInfo.fieldByName("created_date");
 	
-
 var users = Alloy.Globals.db.execute("SELECT * FROM participants WHERE happening_id = ? limit 3", id);
 while(users.isValidRow()){
 	var userInfo = Alloy.Globals.db.execute("SELECT * FROM users WHERE id = ?", users.fieldByName("user_id"));

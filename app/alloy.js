@@ -21,6 +21,8 @@ var ACS = require('ti.cloud'),
     username = Ti.App.Properties.getString('acs-username-'+env),
     password = Ti.App.Properties.getString('acs-password-'+env);
 
+Alloy.Globals.updateHome = true;
+
 // if not configured, just return
 if (!env || !username || !password) { return; }
 /**

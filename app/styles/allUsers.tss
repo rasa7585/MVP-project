@@ -172,7 +172,7 @@
 }
 
 "#inviteContainer": {
-	height: '8%',
+	height: 40,
 	width: Ti.UI.FILL,
 	backgroundColor: '#1a1360',
 	// layout: 'horizontal',
@@ -198,16 +198,18 @@
 }
 
 "#listViewContainer": {
-	// backgroundColor: "green",
-	height: '71.5%',
-	width: Ti.UI.FILL
+	// backgroundColor: "darkgray",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	bottom: 40,
 }
 
 "#contentContainer": {
 	height: '83%',
 	width: Ti.UI.FILL,
 	bottom: '0dp',
-	layout: 'vertical'
+	layout: 'vertical',
+	// backgroundColor: 'yellow'
 }
 
 "#btnsContainer": {
@@ -222,7 +224,7 @@
 	height: '60dp',
 	// backgroundColor: 'blue',
 	width: '90%',
-	top: '10dp',
+	top: '5dp',
 	layout: 'horizontal'
 }
 

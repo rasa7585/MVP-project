@@ -59,22 +59,9 @@ function setInfo() {
 
 		$.profileImg.image = userData.fieldByName('photo');
 		$.name.text = userData.fieldByName('name');
-		$.email.text = userData.fieldByName('email');
 	} catch(e) {
 		alert("Please login");
 	}
-	
-	var activity = $.profileWin.activity;
-	activity.onCreateOptionsMenu = function(e){
-		var menu = e.menu;
-		var logout = menu.add({
-			title:"Logout"
-		});
-		
-		logout.addEventListener("click", function(e){
-			Alloy.createController("index").getView().open();
-		});
-	};
 	
 
 }
@@ -107,4 +94,9 @@ function itemClicked(e) {
 
 function OpenUsers() {
 	Alloy.createController('allUsers').getView().open();
+}
+
+function logout(){
+	$.profileWin.close();
+	Alloy.createController("index").getView().open();
 }

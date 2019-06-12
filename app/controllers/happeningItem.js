@@ -22,6 +22,7 @@ function loadInfo() {
         countAllTasks++;
         tasksData.next();
     }
+    
     calculatedPercentage = Math.round((countDoneTasks * 100) / countAllTasks);
 
     if (calculatedPercentage >= 0 && calculatedPercentage < 30) {
@@ -32,6 +33,8 @@ function loadInfo() {
         determinedColor = '#e5e216';
     } else if (calculatedPercentage >= 90 && calculatedPercentage <= 100) {
         determinedColor = '#03c564';
+    } else{
+        determinedColor = '#e3000d';
     }
     
     while (imgData.isValidRow()) {
@@ -43,7 +46,12 @@ function loadInfo() {
         descData.next();    
     }
     
-    $.presetage.text = calculatedPercentage + " %";
+    if(calculatedPercentage>=0){
+        $.presetage.text = calculatedPercentage + " %";
+    }else{
+        $.presetage.text = "0 %";
+    }
+    
     $.completedTaskPresentage.backgroundColor = determinedColor;
 
 }

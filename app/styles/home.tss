@@ -74,10 +74,11 @@
 }
 
 "#profilePhoto": {
-	backgroundColor: 'transparent',
-	height: '60dp',
-	width: '60dp',
-	borderRadius: 70,
+	top: 5,
+	backgroundColor: '#D9ffffff',
+	height: 60,
+	width: 60,
+	borderRadius: 30,
 }
 
 "#defauleProfImg": {

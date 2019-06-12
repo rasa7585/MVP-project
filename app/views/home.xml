@@ -1,5 +1,5 @@
 <Alloy>
-	<Window onOpen="setInfo" id="homeWin">
+	<Window onFocus="setInfo" id="homeWin">
 		<View id="userContainer">
 			<View id="userInfo" onClick="showProfile">
 				<Label id="title">Happenings</Label>
