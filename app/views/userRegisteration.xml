@@ -15,9 +15,6 @@
 					<Label id="passwordIcon"></Label>
 					<TextField id="password" />
 				</View>
-				<View id="photoView" onClick="openGallery">
-					<Label id="photoIcon"></Label>
-				</View>
 				<Button id="loginBtn" onClick="createUser">Create User</Button>
 				<View id="question">
 					<Label id="questionLabel">Do You Have Already an Account?</Label>

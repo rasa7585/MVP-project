@@ -22,6 +22,13 @@ var ACS = require('ti.cloud'),
     password = Ti.App.Properties.getString('acs-password-'+env);
 
 Alloy.Globals.updateHome = true;
+Alloy.Globals.homeWin = true;
+
+Alloy.Globals.notify = function(message){
+  Ti.UI.createNotification({
+      message: message
+  }).show();
+};
 
 // if not configured, just return
 if (!env || !username || !password) { return; }

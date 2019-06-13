@@ -1,6 +1,9 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 var id = $.args.id;
+var containerWidth = $.args.width;
+var innerElementsWidth = $.args.innerElements;
+var itemWidth = $.args.itemWidth;
 function loadInfo() {
     var count = 0;
     var calculatedPercentage = 0;
@@ -8,11 +11,17 @@ function loadInfo() {
     var happeningInfo = Alloy.Globals.db.execute("SELECT * FROM happening WHERE id = ?", id);
     var countDoneTasks = 0;
     var countAllTasks = 0;
-
+	$.container.width = containerWidth;
+	$.item.width = itemWidth;
+	$.happeningImg.width = innerElementsWidth;
+	$.middel.width = innerElementsWidth;
+	$.topView.width = innerElementsWidth;
     var descData = Alloy.Globals.db.execute('SELECT * FROM content WHERE happening_id=?', id);
     var imgData = Alloy.Globals.db.execute('SELECT * FROM media WHERE happening_id=? LIMIT 1', id);
     var tasksData = Alloy.Globals.db.execute('SELECT * FROM tasks WHERE happening_id=?', id);
     $.title.text = happeningInfo.fieldByName("name");
+    $.desc.text = happeningInfo.fieldByName("details").substr(0,100);
+    
     while (tasksData.isValidRow()) {
 
         if (tasksData.fieldByName('done') == 1) {

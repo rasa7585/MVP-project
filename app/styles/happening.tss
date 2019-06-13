@@ -6,6 +6,7 @@
 "#scrollView":{
 	width:Titanium.UI.FILL,
 	height:"100%",
+	scrollType: 'vertical',
 	top:0,
 }
 
@@ -60,6 +61,7 @@
 	height: Titanium.UI.SIZE,
 	layout: "vertical",
 	top:"22%",
+	bottom: 3
 }
 
 "#happeningName":{
@@ -199,7 +201,7 @@
 		fontFamily:"Cairo-Regular.ttf",
 		fontSize:13
 	}, 
-	top:25,
+	top: 10,
 	borderRadius:7,
 	bottom:10
 }
@@ -210,7 +212,7 @@
 	borderRadius:5,
 	backgroundColor:"#150f55",
 	left:"10%",
-	top:20
+	top:10
 }
 
 "#cameraIcon":{

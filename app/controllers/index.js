@@ -43,10 +43,10 @@ function login(){
 			openHome();
 			
 		}else{
-			alert('Password is wrong');
+			Alloy.Globals.notify('Password is wrong');
 		}
 	}else if(matchedEmailsL == 0){
-		alert('Your email is worng');
+		Alloy.Globals.notify('Your email is worng');
 	}
 	
 }
@@ -55,10 +55,14 @@ $.loginWin.addEventListener("android:back", function(e){
 	
 });
 
-// $.loginWin.open();
 if (Ti.App.Properties.getString("email") == null) {
-	$.loginWin.open();
+	setTimeout(function(){
+		$.loginWin.open();
+	},2000);
+	
 }else{
-	Alloy.createController("home").getView().open();
-	// Alloy.createController('listOfFriends').getView().open();
+	setTimeout(function(){
+		Alloy.createController("home").getView().open();
+	},2000);
+	
 }

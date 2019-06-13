@@ -34,6 +34,7 @@
 					<Label id="cameraIcon"></Label>
 				</View>
 				<Button id="saveBtn" onClick="createHappening">Save</Button>
+				<View height="3dp" top="3dp"></View>
 			</View>
 		</ScrollView>
 	</Window>

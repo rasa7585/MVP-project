@@ -11,7 +11,7 @@
 					<Label id="passwordIcon"></Label>
 					<TextField id="password" />
 				</View>
-				<Label id="forgetPass">Forget Password?</Label>
+				<Label id="forgetPass">Forgot password?</Label>
 				<Button id="loginBtn" onClick="login">Login</Button>
 				<View id="question">
 					<Label id="questionLabel">Don't Have Account?</Label>

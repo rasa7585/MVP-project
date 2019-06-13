@@ -9,7 +9,7 @@
 			<View id="leftCircle"></View>
 			<View id="rightCircel"></View>
 			<View id="photoContainer" onClick="showProfile">
-				<View id="profilePhoto">
+				<View id="profilePhoto" onClick="showProfile">
 					<ImageView id="profileImg" />
 				</View>
 			</View>

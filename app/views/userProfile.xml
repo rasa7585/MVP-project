@@ -2,9 +2,9 @@
 	<Window onOpen="setInfo" id="profileWin">
 		<ScrollView id="holeContainer">
 			<View id="photoContainer">
-				<View id="profilePhoto" onClick="OpenUsers">
+				<View id="profilePhoto" onClick="openGallery">
 					<Label id="defauleProfImg" text="person"></Label>
-					<ImageView id="profileImg"></ImageView>
+					<ImageView id="profileImg" />
 				</View>
 			</View>
 			<View id="nameContainer">
@@ -12,7 +12,6 @@
 			</View>
 			<View id="emailContainer">
 				<View id="innerEmailContainer">
-					<Label id="emailIcon" text="mail"></Label>
 					<Label id="email" onClick="logout">Logout</Label>
 				</View>
 			</View>
