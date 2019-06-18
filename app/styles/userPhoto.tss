@@ -10,7 +10,7 @@
 "#photoContainer":{
 	width:"90%",
 	height:Titanium.UI.SIZE,
-	backgroundColor:'red'
+	backgroundColor:'transparent'
 }
 
 "#userPhoto":{
