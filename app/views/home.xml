@@ -1,17 +1,24 @@
 <Alloy>
 	<Window onFocus="setInfo" id="homeWin">
 		<View id="userContainer">
-			<View id="userInfo" onClick="showProfile">
+			<View id="userInfo">
 				<Label id="title">Happenings</Label>
 				<Label id="todayDesc">Today you have 9 Happenings</Label>
 			</View>
-			
 			<View id="leftCircle"></View>
 			<View id="rightCircel"></View>
-			<View id="photoContainer" onClick="showProfile">
-				<View id="profilePhoto" onClick="showProfile">
+			<View id="photoContainer">
+				<View id="profilePhoto">
 					<ImageView id="profileImg" />
 				</View>
+				<Picker id="picker">
+					<PickerColumn>
+						<PickerRow title=""/>
+						<PickerRow title="photo" onClick="showPhoto"/>
+						<PickerRow title="Profile"/>
+						<PickerRow title="Settings"/>
+					</PickerColumn>
+				</Picker>
 			</View>
 		</View>
 		<ScrollView id="scrollView">

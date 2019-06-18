@@ -3,6 +3,7 @@ var args = $.args;
 Alloy.Globals.homeWin = $.homeWin;
 
 function setInfo() {
+	$.picker.setSelectedRow(0,0);
 	$.happeningContainer.removeAllChildren();
 	var userData;
 	try {
@@ -54,11 +55,20 @@ $.homeWin.addEventListener("android:back", function(e) {
 
 });
 
-function showProfile() {
-	Alloy.createController("userProfile").getView().open();
-}
-
 function addHappening() {
 	Alloy.createController("happening").getView().open();
 }
 
+function showPhoto(){
+	alert("show Photo");
+}
+
+$.picker.addEventListener("change", function(e){
+	if(e.rowIndex == 1){
+		Alloy.createController("userPhoto").getView().open();
+	}else if(e.rowIndex == 2){
+		Alloy.createController("userProfile").getView().open();
+	}else if(e.rowIndex == 3){
+		Alloy.createController("settings").getView().open();
+	}
+});

@@ -39,14 +39,14 @@ function createUser() {
 		checkEmail();
 		
 		if (repeatedEmail == false) {
-			Alloy.Globals.db.execute('INSERT INTO users (name, email, password) VALUES (?, ?, ?, ?)', name, email, password);
+			Alloy.Globals.db.execute('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', name, email, password);
 			Ti.App.Properties.setString("email", email);
 			
 			var lastUser = Alloy.Globals.db.execute('SELECT * FROM users order by id desc limit 1');
 			Ti.App.Properties.setInt("userId", lastUser.fieldByName("id"));
 			Alloy.createController("home").getView().open(); 
-			$.photoView.removeAllChildren();
-			$.photoView.add($.photoIcon);
+			// $.photoView.removeAllChildren();
+			// $.photoView.add($.photoIcon);
 
 			Alloy.Globals.notify('Your account is successfully created');
 

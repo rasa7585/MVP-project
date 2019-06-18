@@ -6,6 +6,9 @@
 					<Label id="defauleProfImg" text="person"></Label>
 					<ImageView id="profileImg" />
 				</View>
+				<View id="iconContainer">
+					<Label id="cameraIcon"></Label>
+				</View>
 			</View>
 			<View id="nameContainer">
 				<Label id="name"></Label>

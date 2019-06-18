@@ -78,7 +78,7 @@
 	backgroundColor: '#D9ffffff',
 	height: 60,
 	width: 60,
-	borderRadius: 30,
+	borderRadius: 30
 }
 
 "#defauleProfImg": {
@@ -92,51 +92,66 @@
 "#profileImg": {
 	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	zIndex:1000
+	zIndex: 1000
 }
 
 "#happeningContainer":{
-	width:"95%",
+	width: "95%",
 	height:Titanium.UI.SIZE,
-	layout:"horizontal",
-	top:0
+	layout: "horizontal",
+	top: 0
 }
 
 "#addHappening":{
 	width:Titanium.UI.FILL,
-	height:"10%",
-	bottom:0
+	height: "10%",
+	bottom: 0
 }
 
 "#addBtn":{
-	width:"60%",
-	height:"70%",
-	backgroundColor:"#1a1360",
-	borderRadius:7,
-	
+	width: "60%",
+	height: "70%",
+	backgroundColor: "#1a1360",
+	borderRadius: 7
 }
 
 "#labelContainer":{
 	width:Titanium.UI.SIZE,
 	height:Titanium.UI.SIZE,
-	layout:"horizontal"
+	layout: "horizontal"
 }
 
 "#addIcon":{
-	text:"add_circle_outline",
+	text: "add_circle_outline",
 	font:{
-		fontFamily:"material_icons.ttf",
-		fontSize:24
+		fontFamily: "material_icons.ttf",
+		fontSize: 24
 	},
-	color:"#fff",
-	
+	color: "#fff"
 }
 
 "#btnLabel":{
-	text:"Create Happening",
-	color:"#fff",
+	text: "Create Happening",
+	color: "#fff",
 	font:{
-		fontFamily:"Cairo-Reqular.ttf",
+		fontFamily: "Cairo-Reqular.ttf"
 	},
-	left:15
+	left: 15
+}
+
+"#picker":{
+	// type:Titanium.UI.PICKER_TYPE_TIME,
+	width: "30%",
+	bottom: 0,
+	font:{
+		fontFamily: "Cairo-Regular.ttf"
+	}
+}
+
+"PickerRow":{
+	// backgroundColor:"#fff",
+	// color:"#1a1360",
+	font:{
+		fontFamily: "Cairo-Regular.ttf"
+	}
 }

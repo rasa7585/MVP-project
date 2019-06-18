@@ -12,7 +12,7 @@
 "#photoContainer": {
 	backgroundColor: 'white',
 	height: '160dp',
-	width: Ti.UI.FILL
+	width: Titanium.UI.SIZE,
 }
 
 "#profilePhoto": {
@@ -134,4 +134,25 @@
 	},
 	left: '7dp',
 	top: '0dp'
+}
+
+"#cameraIcon":{
+	text:"\uf030",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:20
+	},
+	color:"#fff",
+	textAlign:"center",
+	width:Titanium.UI.FILL
+	
+}
+
+"#iconContainer":{
+	width:45,
+	height:45,
+	borderRadius:23,
+	backgroundColor:"#419fd9",
+	bottom:0,
+	left:0,
 }
