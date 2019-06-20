@@ -1,6 +1,6 @@
 "#homeWin":{
 	backgroundColor: "#fff",
-	theme: "Theme.AppCompat.Fullscreen"
+	theme: "Theme.AppCompat.Fullscreen",
 }
 
 "#scrollView": {
@@ -74,7 +74,7 @@
 }
 
 "#profilePhoto": {
-	top: 5,
+	top: 15,
 	backgroundColor: '#D9ffffff',
 	height: 60,
 	width: 60,
@@ -140,18 +140,38 @@
 }
 
 "#picker":{
-	// type:Titanium.UI.PICKER_TYPE_TIME,
-	width: "30%",
-	bottom: 0,
-	font:{
-		fontFamily: "Cairo-Regular.ttf"
-	}
+	width:130,
+	visible:false,
+	height:Titanium.UI.SIZE,
+	backgroundColor:"#fff",
+	color:"#1a1360",
+	top:"15%",
+	zIndex:10000,
+	separatorColor:"#80afafaf",
+	right:10
 }
 
-"PickerRow":{
-	// backgroundColor:"#fff",
-	// color:"#1a1360",
+".row":{
+	layout:"horizontal",
+	height:38
+}
+
+".icon":{
 	font:{
-		fontFamily: "Cairo-Regular.ttf"
-	}
+		fontFamily:"fontIcon.ttf",
+		fontSize:13
+	},
+	color:"#1a1360",
+	left:10,
+	top:8
+}
+
+".menuLabel":{
+	font:{
+		fontFamily:"Cairo-Regular.ttf",
+		fontSize:13
+	},
+	color:"#1a1360",
+	left:15,
+	top:8
 }

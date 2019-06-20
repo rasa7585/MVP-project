@@ -26,7 +26,7 @@ Alloy.Globals.homeWin = true;
 
 Alloy.Globals.notify = function(message){
   Ti.UI.createNotification({
-      message: message
+      message: "Vas-y, " + message
   }).show();
 };
 

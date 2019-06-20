@@ -14,7 +14,7 @@
 }
 
 "#userPhoto":{
-	// image:"/images/photos/pic.jpg",
+	image:"/images/photos/pic.jpg",
 	width:Titanium.UI.FILL,
 	enableZoomControls:true
 	// borderRadius:5,

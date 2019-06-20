@@ -69,6 +69,7 @@ loadInfo();
 function showDetails() {
 
     Alloy.createController('happeningDetails', {
-        'id' : id
+        'id' : id,
+        'type':'details'
     }).getView().open();
 }

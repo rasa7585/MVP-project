@@ -3,24 +3,30 @@
 		<View id="userContainer">
 			<View id="userInfo">
 				<Label id="title">Happenings</Label>
-				<Label id="todayDesc">Today you have 9 Happenings</Label>
+				<Label id="todayDesc"></Label>
 			</View>
 			<View id="leftCircle"></View>
 			<View id="rightCircel"></View>
 			<View id="photoContainer">
-				<View id="profilePhoto">
+				<View id="profilePhoto" onClick="showMenu">
 					<ImageView id="profileImg" />
 				</View>
-				<Picker id="picker">
-					<PickerColumn>
-						<PickerRow title=""/>
-						<PickerRow title="photo" onClick="showPhoto"/>
-						<PickerRow title="Profile"/>
-						<PickerRow title="Settings"/>
-					</PickerColumn>
-				</Picker>
 			</View>
 		</View>
+		<TableView id="picker">
+			<TableViewRow title="photo" onClick="openGallery" class="row">
+				<Label class="icon">\uf030</Label>
+				<Label class="menuLabel">Photo</Label>
+			</TableViewRow>
+			<TableViewRow title="Profile" class="row" onClick="openProfile">
+				<Label class="icon">\uf007</Label>
+				<Label class="menuLabel">Profile</Label>
+			</TableViewRow>
+			<TableViewRow title="Settings" class="row" onClick="openSettings">
+				<Label class="icon">\uf013</Label>
+				<Label class="menuLabel">Settings</Label>
+			</TableViewRow>
+		</TableView>
 		<ScrollView id="scrollView">
 			<View id="happeningContainer"></View>
 		</ScrollView>

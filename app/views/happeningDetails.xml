@@ -10,15 +10,15 @@
 				<Label id="participantIcon" class="navIcon">person_outline</Label>
 				<Label id="participantLabel" class="navLabel">Participants</Label>
 			</View>
-			<View id="walletView" class="navView">
+			<View id="walletView" class="navView" onClick="goToWallet">
 				<Label id="walletIcon" class="navIcon"> \uf555</Label>
 				<Label id="walletLabel" class="navLabel">Wallet</Label>
 			</View>
-			<View id="calendarView" class="navView">
+			<View id="calendarView" class="navView" onClick="goToCalendar">
 				<Label id="calendarIcon" class="navIcon">\uf073</Label>
 				<Label id="calendarLabel" class="navLabel">Calendar</Label>
 			</View>
-			<View id="taskView" class="navView">
+			<View id="taskView" class="navView" onClick="goToTasks">
 				<Label id="taskIcon" class="navIcon">\uf14a</Label>
 				<Label id="taskLabel" class="navLabel">Tasks</Label>
 			</View>

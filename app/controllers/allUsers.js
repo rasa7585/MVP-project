@@ -7,7 +7,8 @@ $.indicatorF.hide();
 $.lineF.hide();
 
 ///////////////////////temporarily assigned
-var happeningId = $.args.id;
+// var happeningId = $.args.id;
+var happeningId = 3;
 
 var friendItems = [];
 var registeredItems = [];

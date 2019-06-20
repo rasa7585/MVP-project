@@ -1,13 +1,14 @@
 ".happeningWin":{
-	backgroundColor: "#1a1360",
+	backgroundColor: "#f8fcff",
 	theme: "Theme.AppCompat.Fullscreen"
 }
 
 "#scrollView":{
 	width:Titanium.UI.FILL,
-	height:"100%",
+	height: "100%",
 	scrollType: 'vertical',
-	top:0,
+	top: "17%",
+	backgroundColor: "#fff"
 }
 
 "#topView":{
@@ -19,21 +20,13 @@
 
 "#title":{
 	font:{
-		fontSize: 28,
+		fontSize: 18,
 		fontFamily: "Cairo-Bold.ttf",
 		fontWeight: "bold"
 	},
 	color: "#fff",
-	width:Titanium.UI.FILL,
-	textAlign: "center"
-}
-
-"#line":{
-	width:"65%",
-	height:1,
-	backgroundColor:"#fff",
-	bottom:10
-	
+	width: "90%",
+	textAlign: "left"
 }
 
 "#leftCircle":{
@@ -56,173 +49,253 @@
 	top: -20
 }
 
+"#photoContainer": {
+	backgroundColor: 'transparent',
+	right: 20,
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+}
+
+"#profilePhoto": {
+	backgroundColor: 'transparent',
+	height: '60dp',
+	width: '60dp',
+	borderRadius: 70
+}
+
+"#defauleProfImg": {
+	font: {
+		fontFamily: 'material_icons.ttf',
+		fontSize: '70dp'
+	},
+	color: '#dbdbdb'
+}
+
+"#profileImg": {
+	image: "/images/photos/pic.png",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	zIndex: 1000
+}
+
+"#happeningDesc":{
+	width: "90%",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	top: 10,
+	backgroundColor: "#fff"
+}
+
+"#detailsTitle":{
+	font:{
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 14
+	},
+	width:Titanium.UI.FILL,
+	textAlign: "left",
+	color: "#1a1360"
+}
+
+"#detailsTextField":{
+	width: "70%",
+	// height: 120,
+	font:{
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 12
+	},
+	borderColor: "#aeaeae",
+	borderWidth: 1,
+	borderRadius: 3,
+	right:0,
+	lines:4
+}
+
+"#happeningInfo":{
+	width: "90%",
+	layout: "vertical",
+	padding: 15,
+	top: 10,
+	backgroundColor: "#fff"
+}
+
+".textFieldContainer":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	bottom: 15
+}
+
+".textFieldLabel":{
+	font:{
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 13
+	},
+	color: "#1a1360",
+	left: 0,
+	width: "20%"
+}
+
+".textField":{
+	width: "70%",
+	right: 0,
+	color: "#454545",
+	height: 35,
+	borderRadius: 2,
+	borderColor: "#aeaeae",
+	borderWidth: 1,
+	font:{
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 15
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 "#content":{
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.SIZE,
 	layout: "vertical",
-	top:"22%",
+	top: "22%",
 	bottom: 3
 }
 
 "#happeningName":{
-	width:"80%",
-	height:50,
-	backgroundColor:"#150f55",
-	left:"10%",
-	top:15
+	width: "80%",
+	height: 50,
+	backgroundColor: "#150f55",
+	left: "10%"
 }
 
 "#happeningTextField":{
-	width:"100%",
-	height:50,
-	hintText: " Name",
-	color:"#fff",	
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
-		fontSize:13
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 9
 	},
-	backgroundColor:"#150f55",
-	borderRadius:7,
+	right: 0
 }
 
-"#location":{
-	width:"80%",
-	height:50,
-	backgroundColor:"#150f55",
-	left:"10%",
-	top:15
-}
-"#details":{
-	width:"80%",
-	height:Ti.UI.SIZE,
-	backgroundColor:"#150f55",
-	left:"10%",
-	top:15
+"#textArea":{
+	width: "70%",
+	height: 120,
+	font:{
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 12
+	},
+	borderColor: "#aeaeae",
+	borderWidth: 1,
+	borderRadius: 3,
+	right:0
 }
 
-"#detailsTextField":{
-	width:"100%",
-	height:150,
-	hintText: " Details",
-	color:"#fff",	
-	font:{
-		fontFamily:"Cairo-Regular.ttf",
-		fontSize:13
-	},
-	backgroundColor:"#150f55",
-	borderRadius:7,
-}
 "#locationTextField":{
-	width:"100%",
-	height:50,
-	hintText: " Location",
-	color:"#fff",	
+	titleHint: " Location",
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
-		fontSize:13
-	},
-	backgroundColor:"#150f55",
-	borderRadius:7,
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 12
+	}
 }
 
 "#budget":{
-	width:"80%",
-	height:50,
-	backgroundColor:"#150f55",
-	left:"10%",
-	top:15
+	width: "80%",
+	height: 50,
+	backgroundColor: "#150f55",
+	left: "10%",
+	top: 15
 }
 
 "#budgetTextField":{
-	width:"100%",
-	height:50,
-	hintText: "Budget",
-	color:"#fff",	
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
-		fontSize:13
-	},
-	backgroundColor:"#150f55",
-	borderRadius:7,
-}
-
-"#priContainer":{
-	width:"80%",
-	height:50,
-	top:15
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 12
+	}
 }
 
 "#publicContainer":{
-	width:"50%",
-	left:0,
-	height:Titanium.UI.FILL,
-	layout:"horizontal"
+	width: "50%",
+	left: 0,
+	height: 40,
+	layout: "horizontal"
 }
 
 "#privateContainer":{
-	width:"50%",
-	right:0,
-	height:Titanium.UI.FILL,
-	layout:"horizontal"
+	width: "50%",
+	right: 0,
+	height: 40,
+	layout: "horizontal"
 }
 
 "#publicLabel":{
-	text:"Public",
+	text: "Public",
 	font:{
-		fontSize:14,
+		fontSize: 14,
+		fontFamily: "Cairo-Regular.ttf"
 	},
-	color:"#fff",
+	color: "#1a1360"
 }
 
 "#privateLabel":{
-	text:"Private",
+	text: "Private",
 	font:{
-		fontSize:14,
+		fontSize: 14
 	},
-	color:"#fff",
+	color: "#1a1360"
 }
 
 "#publicRadio":{
-	image : "/images/radio_checked.png",
-	left:15
+	image: "/images/radio_checked.png",
+	left: 15,
+	width: 15,
+	height: 15
 }
 
 "#privateRadio":{
-	image : "/images/radio_unchecked.png",
-	left:15
+	image: "/images/radio_unchecked.png",
+	left: 15,
+	width: 15,
+	height: 15
 }
 
 "#saveBtn":{
-	width:"80%",
-	height:50,
-	backgroundColor:"#fff",
-	color:"#80150f55",
+	width: "80%",
+	height: 40,
+	backgroundColor: "#1a1360",
+	color: "#fff",
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
-		fontSize:13
-	}, 
-	top: 10,
-	borderRadius:7,
-	bottom:10
+		fontFamily: "Cairo-Regular.ttf",
+		fontSize: 13
+	},
+	// top: 10,
+	borderRadius: 2,
+	title: "Save",
+	bottom: 10
 }
 
 "#photoView":{
-	width:80,
-	height:80,
-	borderRadius:5,
-	backgroundColor:"#150f55",
-	left:"10%",
-	top:10
+	width: 65,
+	height: 65,
+	borderRadius: 5,
+	backgroundColor: "#150f55",
+	left: "30%",
+	top: 10,
+	bottom:15
 }
 
 "#cameraIcon":{
-	text:"\uf030",
+	text: "\uf030",
 	font:{
-		fontFamily:"fontIcon.ttf",
-		fontSize:24
+		fontFamily: "fontIcon.ttf",
+		fontSize: 24
 	},
-	color:"#fff",
+	color: "#fff",
 	width:Titanium.UI.FILL,
-	textAlign:"center"
+	textAlign: "center"
 }
 

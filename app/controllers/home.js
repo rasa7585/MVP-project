@@ -3,7 +3,8 @@ var args = $.args;
 Alloy.Globals.homeWin = $.homeWin;
 
 function setInfo() {
-	$.picker.setSelectedRow(0,0);
+	hide();
+	//$.picker.setSelectedRow(0,0);
 	$.happeningContainer.removeAllChildren();
 	var userData;
 	try {
@@ -19,6 +20,8 @@ function setInfo() {
 	}
 
 	var data = Alloy.Globals.db.execute('select * from happening where accessibility="pu" order by id desc');
+	var dataCount = Alloy.Globals.db.execute('select count(*) as count from happening where accessibility="pu" order by id desc');
+	$.todayDesc.text = "Today you have " + dataCount.fieldByName("count") + " Happenings";
 	var lastHappening = Alloy.Globals.db.execute("select * from happening where accessibility='pu' order by id desc limit 1");
 
 	while (data.isValidRow()) {
@@ -56,19 +59,65 @@ $.homeWin.addEventListener("android:back", function(e) {
 });
 
 function addHappening() {
-	Alloy.createController("happening").getView().open();
+	Alloy.createController("happeningDetails",{'type':'add'}).getView().open();
 }
 
 function showPhoto(){
 	alert("show Photo");
 }
 
-$.picker.addEventListener("change", function(e){
-	if(e.rowIndex == 1){
-		Alloy.createController("userPhoto").getView().open();
-	}else if(e.rowIndex == 2){
-		Alloy.createController("userProfile").getView().open();
-	}else if(e.rowIndex == 3){
-		Alloy.createController("settings").getView().open();
+var profilePhoto;
+function openGallery() {
+	if (!Ti.Media.hasCameraPermissions()) {
+		Ti.Media.requestCameraPermissions();
 	}
-});
+	Ti.Media.openPhotoGallery({
+		mediaTypes : [Ti.Media.MEDIA_TYPE_PHOTO],
+		success : function(e) {
+
+			profilePhoto = e.media;
+			$.profileImg.image = profilePhoto;
+			Alloy.Globals.db.execute("UPDATE users set photo = ? where id = ?", profilePhoto, Ti.App.Properties.getInt("userId"));
+		},
+		error : function(e) {
+			alert('error');
+		}
+	});
+}
+
+function showMenu(){
+	if($.picker.visible == true){
+		$.picker.visible = false;
+		hide();
+	}else{
+		$.picker.visible = true;
+	$.picker.animate({
+		curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
+	});
+	}
+	// alert("Show Menu");
+	// $.picker.height = 100;
+	
+}
+
+
+
+function hide() {
+	$.picker.visible = false;
+	
+	$.picker.animate({
+		curve: Ti.UI.ANIMATION_CURVE_EASE_IN
+	}, function () {
+		// $.container.height = Ti.UI.SIZE;
+	});
+
+	return;
+}
+
+function openProfile(){
+	Alloy.createController("userProfile").getView().open();
+}
+
+function openSettings(){
+	Alloy.createController("settings").getView().open();
+}

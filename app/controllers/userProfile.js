@@ -53,11 +53,12 @@ function loadInterests() {
 loadInterests();
 
 function setInfo() {
-
+	
     try {
         var userData = Alloy.Globals.db.execute('SELECT name,email,photo From users WHERE id=?', Ti.App.Properties.getInt("userId"));
 
         $.profileImg.image = userData.fieldByName('photo');
+        $.profilePhoto.borderWidth = 3;
         $.name.text = userData.fieldByName('name');
     } catch(e) {
         alert("Please login");

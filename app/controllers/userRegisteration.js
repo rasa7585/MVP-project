@@ -55,7 +55,7 @@ function createUser() {
 		}
 
 	} else {
-		Alloy.Globals.notify('Vas-y, fill the missing fields!');
+		Alloy.Globals.notify('fill the missing fields!');
 	}
 
 }

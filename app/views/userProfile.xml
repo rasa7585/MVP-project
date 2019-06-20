@@ -6,7 +6,7 @@
 					<Label id="defauleProfImg" text="person"></Label>
 					<ImageView id="profileImg" />
 				</View>
-				<View id="iconContainer">
+				<View id="iconContainer" onClick="openGallery">
 					<Label id="cameraIcon"></Label>
 				</View>
 			</View>

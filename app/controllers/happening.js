@@ -9,6 +9,17 @@ function notify(msg) {
     }).show();
 }
 
+function setUserInfo(){
+	var userInfo = Alloy.Globals.db.execute("SELECT * FROM users WHERE id = ?", Ti.App.Properties.getInt("userId"));
+	if(userInfo.fieldByName("photo") == null || userInfo.fieldByName("photo") == ""){
+		$.profileImg.image = "/images/photos/pic.jpg";
+	}else{
+		$.profileImg.image = userInfo.fieldByName("photo");
+	}
+}
+
+setUserInfo();
+
 function createHappening() {
 
     var name = $.happeningTextField.getValue();
