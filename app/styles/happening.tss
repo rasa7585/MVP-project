@@ -21,7 +21,7 @@
 "#title":{
 	font:{
 		fontSize: 18,
-		fontFamily: "Cairo-Bold.ttf",
+		fontFamily: "Montserrat-Bold.ttf",
 		fontWeight: "bold"
 	},
 	color: "#fff",
@@ -88,7 +88,7 @@
 
 "#detailsTitle":{
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 14
 	},
 	width:Titanium.UI.FILL,
@@ -100,7 +100,7 @@
 	width: "70%",
 	// height: 120,
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 12
 	},
 	borderColor: "#aeaeae",
@@ -126,7 +126,7 @@
 
 ".textFieldLabel":{
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 13
 	},
 	color: "#1a1360",
@@ -143,7 +143,7 @@
 	borderColor: "#aeaeae",
 	borderWidth: 1,
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 15
 	}
 }
@@ -175,7 +175,7 @@
 
 "#happeningTextField":{
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 9
 	},
 	right: 0
@@ -185,7 +185,7 @@
 	width: "70%",
 	height: 120,
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 12
 	},
 	borderColor: "#aeaeae",
@@ -197,7 +197,7 @@
 "#locationTextField":{
 	titleHint: " Location",
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 12
 	}
 }
@@ -213,7 +213,7 @@
 "#budgetTextField":{
 	keyboardType:Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD,
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 12
 	}
 }
@@ -236,7 +236,7 @@
 	text: "Public",
 	font:{
 		fontSize: 14,
-		fontFamily: "Cairo-Regular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	},
 	color: "#1a1360"
 }
@@ -269,7 +269,7 @@
 	backgroundColor: "#1a1360",
 	color: "#fff",
 	font:{
-		fontFamily: "Cairo-Regular.ttf",
+		fontFamily: "Montserrat-Regular.ttf",
 		fontSize: 13
 	},
 	// top: 10,

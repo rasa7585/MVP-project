@@ -38,7 +38,7 @@
 	hintText: "Username",
 	color:"#fff",	
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize:13
 	},
 	backgroundColor:"#150f55",
@@ -47,16 +47,8 @@
 }
 
 "#userIcon":{
-	width:"10%",
-	height:Titanium.UI.FILL,
-	left:0,
-	text:"\uf007",
-	font:{
-		fontFamily:"fontIcon.ttf",
-		fontSize:14
-	},
-	color:"#fff",
-	textAlign:"center"
+	left:10,
+	image:"/images/Group-7.png",
 }
 
 "#nameView":{
@@ -72,7 +64,7 @@
 	hintText: "Name",
 	color:"#fff",	
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize:13
 	},
 	backgroundColor:"#150f55",
@@ -81,17 +73,8 @@
 }
 
 "#nameIcon":{
-	width:"10%",
-	height:Titanium.UI.FILL,
-	left:0,
-	text:"\uf007",
-	font:{
-		fontFamily:"fontIcon.ttf",
-		fontStyle: "regular",
-		fontSize:14
-	},
-	color:"#fff",
-	textAlign:"center"
+	left:10,
+	image:"/images/Group-7.png",
 }
 
 "#passwordView":{
@@ -103,16 +86,8 @@
 }
 
 "#passwordIcon":{
-	width:"10%",
-	height:Titanium.UI.FILL,
-	left:0,
-	text:"lock",
-	font:{
-		fontFamily:"material_icons",
-		fontSize:14
-	},
-	color:"#fff",
-	textAlign:"center"
+	left:10,
+	image:"/images/Union 4.png",
 }
 
 "#password":{
@@ -121,7 +96,7 @@
 	hintText: "Password",
 	color:"#fff",	
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize: 13
 	},
 	backgroundColor:"#150f55",
@@ -156,7 +131,7 @@
 	backgroundColor:"#fff",
 	color:"#80150f55",
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize:13
 	}, 
 	top:25,
@@ -173,7 +148,7 @@
 "#questionLabel":{
 	color:"#80ffffff",
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize:13
 	},
 	
@@ -182,7 +157,7 @@
 "#signin":{
 	color:"#ffffff",
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontWeight: "bold",
 		fontSize:13
 	},

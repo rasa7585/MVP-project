@@ -2,7 +2,14 @@
 	<View id="container">
 		<View id="topView">
 			<View id="userInfo">
-				<Label id="title">Live Music with Indian Ocean</Label>
+				<Label id="title"></Label>
+				<TextField id="nameTextField" class="textField" hintText="Title"></TextField>
+				<View id="happeningPhotoView" onClick="uploadPhoto">
+					<Label id="photoIcon"></Label>
+					<View id="showPhoto">
+						<ImageView id="photo" />
+					</View>
+				</View>
 			</View>
 			<View id="leftCircle"></View>
 			<View id="rightCircel"></View>
@@ -14,44 +21,34 @@
 		</View>
 		<ScrollView id="scrollView">
 			<CardView id="happeningDesc">
-				<Label id="descTitle">Description:</Label>
 				<TextArea id="details"></TextArea>
 				<Label id="detailsLabel" class="desc">Description for happening</Label>
 			</CardView>
 			<CardView id="happeningInfo">
-				<View class="fieldsContainer" id="nameView">
-					<Label id="dateIcon"></Label>
-					<TextField id="nameTextField" class="textField" hintText="Name"></TextField>
-					<Label id="nameLabel" class="labels">Happening Name</Label>
-				</View>
 				<View id="createdDate" class="fieldsContainer">
-					<Label id="dateIcon"></Label>
+					<ImageView id="dateIcon" />
 					<TextField id="dateTextField" class="textField"></TextField>
 					<Label id="dateLabel" class="labels">22 May 2019 07:00 PM onward</Label>
+					 <!-- <TextField id="txt" value="July 4, 2014" top="20"></TextField> -->
+        			<!-- <TextField id="dateTextField" width="50%" height="40" borderColor="red" borderWidth="1" left="0" color="#000"/> -->
+
 				</View>
 				<View id="locationView" class="fieldsContainer">
-					<Label id="locationIcon"></Label>
+					<ImageView id="locationIcon" />
 					<TextField id="locationTextField" class="textField"></TextField>
 					<Label id="locationLabel" class="labels">Melbourn, Australia</Label>
 				</View>
 				<View id="budgetView" class="fieldsContainer">
-					<Label id="budgetIcon"></Label>
+					<ImageView id="budgetIcon" />
 					<TextField id="budgetTextField" class="textField"></TextField>
 					<Label id="budgetLabel" class="labels">Budget: 2005</Label>
 				</View>
 				<View id="bookingView" class="fieldsContainer">
-					<Label id="bookingIcon"></Label>
+					<ImageView id="bookingIcon" />
 					<Label id="bookingLabel" class="labels">Booking/Reservation</Label>
 				</View>
 
 			</CardView>
-			<!-- <View id="buttons">
-			<Label id="rsvp">RSVP</Label>
-			<View id="btnContainer">
-			<Button id="yes"></Button>
-			<Button id="no"></Button>
-			</View>
-			</View> -->
 			<View id="accessibilityContainer">
 				<View id="publicContainer" onClick="publicClicked">
 					<Label id="publicLabel">Public</Label>
@@ -61,22 +58,6 @@
 					<Label id="privateLabel">Private</Label>
 					<ImageView id="privateRadio" />
 				</View>
-			</View>
-			<View id="happeningPhotoView">
-				<View id="photoUpload" onClick="uploadPhoto">
-					<Label id="photoIcon"></Label>
-					<Label id="uploadLabel"></Label>
-				</View>
-				<View id="showPhoto">
-					<ImageView id="photo" />
-				</View>
-			</View>
-			<View id="participantView">
-				<Label id="participantLabel">Participants</Label>
-				<View id="participantPhoto">
-					<View id="photos"></View>
-				</View>
-				<Label id="addIcon"></Label>
 			</View>
 			<View id="saveView" onClick="saveHappening">
 				<Button id="saveBtn"></Button>

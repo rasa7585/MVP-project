@@ -4,11 +4,11 @@
 			<ImageView id="topImg"/>
 			<View id="content">
 				<View id="usernameView">
-					<Label id="userIcon"></Label>
+					<ImageView id="userIcon" />
 					<TextField id="username" />
 				</View>
 				<View id="passwordView">
-					<Label id="passwordIcon"></Label>
+					<ImageView id="passwordIcon" />
 					<TextField id="password" />
 				</View>
 				<Label id="forgetPass">Forgot password?</Label>

@@ -57,4 +57,6 @@ ACS.Users.login({
 
 Alloy.Globals.db = Ti.Database.install("mvp.db", "mvp.db");
 Alloy.Globals.material_icons = 'material_icons.ttf';
+Alloy.Globals.montserrat_regular = "Montserrat-Regular.ttf";
+Alloy.Globals.montserrat_bold = "Montserrat-Bold.ttf";
 

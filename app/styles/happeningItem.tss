@@ -67,8 +67,8 @@
 }
 
 "#completedTaskPresentage":{
-	width: 35,
-	height: 15,
+	width: 45,
+	height: 25,
 	backgroundColor: "#03c564",
 	borderRadius: 10,
 	top: 15,
@@ -81,9 +81,9 @@
 	textAlign: "center",
 	color: "#fff",
 	font:{
-		fontSize: 8,
+		fontSize: 10,
 		fontWeight: "bold",
-		fontFamily: "Cairo-Bold.ttf"
+		fontFamily: "Montserrat-Bold.ttf"
 	}
 }
 
@@ -97,7 +97,7 @@
 	text: "Climate Change",
 	font:{
 		fontSize: 18,
-		fontFamily: "Cairo-Bold.ttf"
+		fontFamily: "Montserrat-Bold.ttf"
 	},
 	textAlign: "center",
 	color: "#fff"
@@ -107,7 +107,7 @@
 	text: "A conservative answer to climate change",
 	font:{
 		fontSize: 11,
-		fontFamily: "Cairo-Regular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	},
 	textAlign: "center",
 	color: "#fff"

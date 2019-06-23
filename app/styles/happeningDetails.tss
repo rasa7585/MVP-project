@@ -21,16 +21,11 @@
 	width: "20%",
 	height:Titanium.UI.FILL,
 	layout:"vertical",
-	top:15
+	top:0
 }
 
 ".navIcon":{
-	color:"#1a1360",
-	font:{
-		fontSize:36
-	},
-	width:Titanium.UI.FILL,
-	textAlign:"center"
+	top:0
 }
 
 ".navLabel":{
@@ -43,43 +38,33 @@
 }
 
 "#aboutIcon":{
+	text:"list",
 	font:{
 		fontFamily:"material_icons.ttf",
-		fontSize:20
-	}
+		fontSize:30
+	},
+	color:"#1a1360",
+	width:Titanium.UI.FILL,
+	textAlign:"center",
+	top:10,
 }
 
 "#participantIcon":{
-	font:{
-		fontFamily:"material_icons.ttf",
-		fontSize:20
-	}
+	image:"/images/user-1.png"
 }
 
 
 "#walletIcon":{
-	text:"\uf555",
-	font:{
-		fontFamily:"fontIcon.ttf",
-		fontSize:20
-	}
+	image:"/images/bag001 - E0DE.png",
 }
 
 
 "#calendarIcon":{
-	font:{
-		fontFamily:"fontIcon.ttf",
-		fontSize:20
-	}
+	image:"/images/calendar-2.png",
 }
 
 "#taskIcon":{
-	text:"check_box",
-	font:{
-		fontFamily:"fontIcon.ttf",
-		fontStyle:"outline",
-		fontSize:20
-	}
+	image:"/images/check-1.png",
 }
 
 

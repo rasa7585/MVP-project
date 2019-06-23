@@ -55,7 +55,7 @@
 "#title":{
 	font:{
 		fontSize: 24,
-		fontFamily: "Cairo-Bold.ttf",
+		fontFamily: "Montserrat-Bold.ttf",
 		fontWeight: "bold"
 	},
 	color: "#fff",
@@ -66,7 +66,7 @@
 "#todayDesc":{
 	font:{
 		fontSize: 12,
-		fontFamily: "Cairo-Regular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	},
 	color: "#fff",
 	width:Titanium.UI.FILL,
@@ -134,7 +134,7 @@
 	text: "Create Happening",
 	color: "#fff",
 	font:{
-		fontFamily: "Cairo-Reqular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	},
 	left: 15
 }
@@ -148,7 +148,8 @@
 	top:"15%",
 	zIndex:10000,
 	separatorColor:"#80afafaf",
-	right:10
+	right:10,
+	borderRadius:5
 }
 
 ".row":{
@@ -163,12 +164,12 @@
 	},
 	color:"#1a1360",
 	left:10,
-	top:8
+	top:11
 }
 
 ".menuLabel":{
 	font:{
-		fontFamily:"Cairo-Regular.ttf",
+		fontFamily:"Montserrat-Regular.ttf",
 		fontSize:13
 	},
 	color:"#1a1360",

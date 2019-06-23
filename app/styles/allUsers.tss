@@ -33,7 +33,7 @@
 "#title":{
 	font:{
 		fontSize: 24,
-		fontFamily: "Cairo-Bold.ttf",
+		fontFamily: "Montserrat-Bold.ttf",
 		fontWeight: "bold"
 	},
 	color: "#fff",
@@ -102,7 +102,7 @@
 	color: "#fff",
 	font: {
 		fontSize: '15dp',
-		fontFamily: "Cairo-Bold.ttf"
+		fontFamily: "Montserrat-Bold.ttf"
 	},
 	left: '0dp',
 	top: '0dp'
@@ -112,7 +112,7 @@
 	color: "#fff",
 	font: {
 		fontSize: '15dp',
-		fontFamily: "Cairo-Bold.ttf"
+		fontFamily: "Montserrat-Bold.ttf"
 	},
 	right: '0dp',
 	top: '0dp',
@@ -184,7 +184,7 @@
 	color: '#fff',
 	left: '20dp',
 	font:{
-		fontFamily: "Cairo-Regular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	}
 	// top: '20%'
 }
@@ -272,7 +272,7 @@
 	color: 'black',
 	left: '10dp',
 	font: {
-		fontSize: "Cairo-Bold.ttf"
+		fontSize: "Montserrat-Regular.ttf"
 	}
 }
 
@@ -280,13 +280,13 @@
 	color: '#29c631',
 	font: {
 		fontWeight: 'bold',
-		fontFamily: "Cairo-Regular.ttf"
+		fontFamily: "Montserrat-Regular.ttf"
 	},
 	right: '0dp'
 }
 
 "#invite":{
 	font:{
-		fontFamily:"Cairo-Regular.ttf"
+		fontFamily:"Montserrat-Regular.ttf"
 	}
 }

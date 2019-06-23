@@ -4,15 +4,15 @@
 			<ImageView id="topImg"/>
 			<View id="content">
 				<View id="nameView">
-					<Label id="nameIcon"></Label>
+					<ImageView id="nameIcon" />
 					<TextField id="name" />
 				</View>
 				<View id="usernameView">
-					<Label id="userIcon"></Label>
+					<ImageView id="userIcon" />
 					<TextField id="username" />
 				</View>
 				<View id="passwordView">
-					<Label id="passwordIcon"></Label>
+					<ImageView id="passwordIcon"/>
 					<TextField id="password" />
 				</View>
 				<Button id="loginBtn" onClick="createUser">Create User</Button>
