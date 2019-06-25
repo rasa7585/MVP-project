@@ -3,12 +3,6 @@ var args = $.args;
 var accessibility = 'pu';
 var profilePhoto = null;
 
-function notify(msg) {
-    Ti.UI.createNotification({
-        message : msg
-    }).show();
-}
-
 function setUserInfo(){
 	var userInfo = Alloy.Globals.db.execute("SELECT * FROM users WHERE id = ?", Ti.App.Properties.getInt("userId"));
 	if(userInfo.fieldByName("photo") == null || userInfo.fieldByName("photo") == ""){
@@ -34,18 +28,15 @@ function createHappening() {
         if (profilePhoto != null) {
             Alloy.Globals.db.execute("INSERT INTO media (happening_id, media_link, media_type) values(?,?,?)", lastHappening.fieldByName("id"), profilePhoto, 'photo');
         }
-
-        // alert(lastHappening.fieldByName('id') +  + "\n"+happeningDate);
-        // notify('Happening is successfully created');
         Alloy.Globals.notify('Happening is successfully created');
         Alloy.Globals.updateHome = true;
         $.happeningWin.close();
 
     } else {
-    	Alloy.Globals.notify("Please fill all the fields.");
-    	// Alloy.Globals.notify("lsjfljelw");
-    	
-        // notify("Please fill all the fields.");
+    	// Alloy.Globals.notify("Please fill all the fields.");
+    	Ti.UI.createNotification({
+    		message:"Vas-y, Please fill all the fields."
+    	}).show();
     }
 
 }

@@ -49,10 +49,10 @@ function createUser() {
 				verificationDialog.show();
 
 			} else if (repeatedEmail == true) {
-				alert('This email is assigned before');
+				Alloy.Globals.notify('This email is already in use!\n Please enter a different email.');
 			}
 		} else {
-			alert(email + " is not valid ");
+			Alloy.Globals.notify("Please enter a valid email address!");
 		}
 
 	} else {

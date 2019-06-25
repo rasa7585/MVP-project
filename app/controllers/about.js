@@ -129,7 +129,7 @@ function saveHappening() {
 		Alloy.createController("home").getView().open();
 
 	} else {
-		notify("Please fill all the fields.");
+		Alloy.Globals.notify("Please fill all the fields.");
 	}
 
 }

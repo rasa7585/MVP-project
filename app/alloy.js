@@ -21,8 +21,7 @@ var ACS = require('ti.cloud'),
     username = Ti.App.Properties.getString('acs-username-'+env),
     password = Ti.App.Properties.getString('acs-password-'+env);
 
-Alloy.Globals.updateHome = true;
-Alloy.Globals.homeWin = true;
+
 
 
 
@@ -51,6 +50,8 @@ ACS.Users.login({
 
 })();
 
+Alloy.Globals.updateHome = true;
+Alloy.Globals.homeWin = true;
 Alloy.Globals.db = Ti.Database.install("mvp.db", "mvp.db");
 Alloy.Globals.material_icons = 'material_icons.ttf';
 Alloy.Globals.montserrat_regular = "Montserrat-Regular.ttf";
