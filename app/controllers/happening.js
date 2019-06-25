@@ -42,8 +42,8 @@ function createHappening() {
         $.happeningWin.close();
 
     } else {
-    	// Alloy.Globals.notify("Please fill all the fields.");
-    	Alloy.Globals.notify("lsjfljelw");
+    	Alloy.Globals.notify("Please fill all the fields.");
+    	// Alloy.Globals.notify("lsjfljelw");
     	
         // notify("Please fill all the fields.");
     }
