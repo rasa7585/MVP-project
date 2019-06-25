@@ -24,11 +24,7 @@ var ACS = require('ti.cloud'),
 Alloy.Globals.updateHome = true;
 Alloy.Globals.homeWin = true;
 
-Alloy.Globals.notify = function(message){
-  Ti.UI.createNotification({
-      message: "Vas-y, " + message
-  }).show();
-};
+
 
 // if not configured, just return
 if (!env || !username || !password) { return; }
@@ -59,4 +55,9 @@ Alloy.Globals.db = Ti.Database.install("mvp.db", "mvp.db");
 Alloy.Globals.material_icons = 'material_icons.ttf';
 Alloy.Globals.montserrat_regular = "Montserrat-Regular.ttf";
 Alloy.Globals.montserrat_bold = "Montserrat-Bold.ttf";
+Alloy.Globals.notify = function(message){
+  Ti.UI.createNotification({
+      message: "Vas-y, " + message
+  }).show();
+};
 

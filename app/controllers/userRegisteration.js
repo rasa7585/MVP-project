@@ -1,16 +1,14 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 
-
 var repeatedEmail = false;
-
 
 function checkEmail() {
 
 	var email = $.username.getValue();
 	var matchEmails = [];
 	var matchEmailsL = 0;
-	
+
 	var data = Alloy.Globals.db.execute('SELECT email FROM users WHERE email LIKE "' + email + '"');
 
 	while (data.isValidRow()) {
@@ -19,9 +17,9 @@ function checkEmail() {
 
 		data.next();
 	}
-	
+
 	matchEmailsL = matchEmails.length;
-	
+
 	if (matchEmailsL == 1) {
 		repeatedEmail = true;
 	} else {
@@ -30,28 +28,31 @@ function checkEmail() {
 
 }
 
+var verificationDialog = Ti.UI.createAlertDialog({
+	androidView : Alloy.createController("verificationDialog").getView(),
+});
+
+var name,
+    password,
+    email;
 function createUser() {
-	var name = $.name.getValue();
-	var email = $.username.getValue();
-	var password = $.password.getValue();
+	name = $.name.getValue();
+	password = $.password.getValue();
+	email = $.username.getValue();
 
 	if (name != '' && email != '' && password != '') {
-		checkEmail();
-		
-		if (repeatedEmail == false) {
-			Alloy.Globals.db.execute('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', name, email, password);
-			Ti.App.Properties.setString("email", email);
-			
-			var lastUser = Alloy.Globals.db.execute('SELECT * FROM users order by id desc limit 1');
-			Ti.App.Properties.setInt("userId", lastUser.fieldByName("id"));
-			Alloy.createController("home").getView().open(); 
-			// $.photoView.removeAllChildren();
-			// $.photoView.add($.photoIcon);
+		if (validateEmail(email)) {
+			// alert(email + " is valid :");
+			checkEmail();
+			if (repeatedEmail == false) {
 
-			Alloy.Globals.notify('Your account is successfully created');
+				verificationDialog.show();
 
-		} else if(repeatedEmail == true) {
-			alert('This email is assigned before');
+			} else if (repeatedEmail == true) {
+				alert('This email is assigned before');
+			}
+		} else {
+			alert(email + " is not valid ");
 		}
 
 	} else {
@@ -60,10 +61,26 @@ function createUser() {
 
 }
 
-function login(){
+function validateEmail(email) {
+	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
+}
+
+Ti.App.addEventListener("sendCode", function(e) {
+	Alloy.Globals.db.execute('INSERT INTO users (name, email, password) VALUES (?, ?, ?)', name, email, password);
+	Ti.App.Properties.setString("email", email);
+
+	var lastUser = Alloy.Globals.db.execute('SELECT * FROM users order by id desc limit 1');
+	Ti.App.Properties.setInt("userId", lastUser.fieldByName("id"));
+	Alloy.createController("home").getView().open();
+
+	Alloy.Globals.notify('Your account is successfully created');
+});
+
+function login() {
 	Alloy.createController("index").getView().open();
 }
 
-$.userWind.addEventListener("android:back", function(e){
-	
+$.userWind.addEventListener("android:back", function(e) {
+
 });

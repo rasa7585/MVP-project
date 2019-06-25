@@ -35,7 +35,7 @@
 "#username":{
 	width:"90%",
 	height:50,
-	hintText: "Username",
+	hintText: "Email",
 	color:"#fff",	
 	font:{
 		fontFamily:"Montserrat-Regular.ttf",
@@ -48,7 +48,15 @@
 
 "#userIcon":{
 	left:10,
-	image:"/images/Group-7.png",
+	// image:"/images/Group-7.png",
+	text:"\uf0e0",
+	font:{
+		fontFamily:"fontIcon.ttf",
+		fontSize:15,
+	},
+	color:"#fff",
+	width:Titanium.UI.FILL,
+	textAlign:"left"
 }
 
 "#nameView":{

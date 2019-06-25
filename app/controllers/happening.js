@@ -36,12 +36,16 @@ function createHappening() {
         }
 
         // alert(lastHappening.fieldByName('id') +  + "\n"+happeningDate);
-        notify('Happening is successfully created');
+        // notify('Happening is successfully created');
+        Alloy.Globals.notify('Happening is successfully created');
         Alloy.Globals.updateHome = true;
         $.happeningWin.close();
 
     } else {
-        notify("Please fill all the fields.");
+    	// Alloy.Globals.notify("Please fill all the fields.");
+    	Alloy.Globals.notify("lsjfljelw");
+    	
+        // notify("Please fill all the fields.");
     }
 
 }

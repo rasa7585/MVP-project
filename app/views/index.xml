@@ -4,7 +4,7 @@
 			<ImageView id="topImg"/>
 			<View id="content">
 				<View id="usernameView">
-					<ImageView id="userIcon" />
+					<Label id="userIcon"></Label>
 					<TextField id="username" />
 				</View>
 				<View id="passwordView">

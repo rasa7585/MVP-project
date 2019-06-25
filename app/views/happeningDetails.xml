@@ -3,7 +3,7 @@
 		<ScrollableView id="scrollableView"></ScrollableView>
 		<View id="bottomNavigation">
 			<View id="aboutView" class="navView" onClick="goToDetails">
-				<Label id="aboutIcon" class="navIcon">list</Label>
+				<ImageView id="aboutIcon" class="navIcon" />
 				<Label id="aboutLabel" class="navLabel">Details</Label>
 			</View>
 			<View id="participantView" class="navView" onClick="goToUsers">

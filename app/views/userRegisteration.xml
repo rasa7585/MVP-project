@@ -8,8 +8,9 @@
 					<TextField id="name" />
 				</View>
 				<View id="usernameView">
-					<ImageView id="userIcon" />
+					<Label id="userIcon"></Label>
 					<TextField id="username" />
+					<!-- <Widget src="input-materialdesign" id="username" /> -->
 				</View>
 				<View id="passwordView">
 					<ImageView id="passwordIcon"/>

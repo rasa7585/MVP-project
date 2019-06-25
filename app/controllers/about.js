@@ -92,7 +92,16 @@ if ($.args.type == "add") {
 	$.dateLabel.text = happeningInfo.fieldByName("created_date");
 	var photoLink = Alloy.Globals.db.execute("SELECT * FROM media WHERE happening_id = ?", id);
 	$.showPhoto.visible = true;
-	$.photo.image = photoLink.fieldByName("media_link");
+	while(photoLink.isValidRow()){
+		if(photoLink.fieldByName("media_link") != '' || photoLink.fieldByName("media_link") != null){
+			$.photo.image = photoLink.fieldByName("media_link");
+		}else{
+			alert("No photo");
+		}
+		
+		photoLink.next();
+	}
+	
 
 }
 

@@ -431,8 +431,14 @@
 }
 
 "#nameTextField":{
-	left: "5%",
-	width: "70%"
+  left: "5%",
+  width: "70%",
+  color: 'white',
+  font: {
+    fontWeight: 'bold',
+    fontFamily: "Montserrat-Regular.ttf"
+  },
+  borderColor: 'transparent'
 }
 
 

@@ -38,15 +38,8 @@
 }
 
 "#aboutIcon":{
-	text:"list",
-	font:{
-		fontFamily:"material_icons.ttf",
-		fontSize:30
-	},
-	color:"#1a1360",
-	width:Titanium.UI.FILL,
-	textAlign:"center",
-	top:10,
+	image:"/images/list.png",
+	top:5
 }
 
 "#participantIcon":{
