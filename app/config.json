@@ -8,6 +8,7 @@
     "os:windows": {},
     "dependencies": {
         "input-materialdesign": "*",
-        "com.juanagu.fab":"*"
+        "com.juanagu.fab":"*",
+        "jp.co.mountposition.calendar": "1.0"
     }
 }

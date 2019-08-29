@@ -67,7 +67,7 @@ function loadInfo() {
 
 loadInfo();
 function showDetails() {
-
+	Ti.App.Properties.setInt("happening_id", id);
     Alloy.createController('happeningDetails', {
         'id' : id,
         'type':'details'
